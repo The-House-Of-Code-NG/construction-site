@@ -21,7 +21,7 @@ const HomepageServices = ({ data }: { data: any }) => {
                   <div
                     className="flex items-center justify-center w-10 h-10 rounded-lg text-sm leading-none tracking-[-0.41px] font-Helvetica mr-4 lg:w-[52px] lg:h-[52px] lg:text-base lg:leading-none"
                     style={{
-                      backgroundColor: service.theme,
+                      backgroundColor: service.color,
                     }}
                   >
                     {service.abbreviation}

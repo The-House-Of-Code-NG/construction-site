@@ -36,17 +36,20 @@ const homepage = {
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et tempora consequuntur velit eaque iste culpa voluptas? Aperiam incidunt tenetur molestiae. Maiores, totam in? Ipsa earum ad eveniet cumque laborum nam.",
         items: [
             {
-                abreviation: "ABM",
+                abbreviation: "ABM",
+                color: generateRandomLightColor(),
                 title: "Construction Of Building",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum aliquam dolores animi temporibus possimus!"
             },
             {
-                abreviation: "COD",
+                abbreviation: "COD",
+                color: generateRandomLightColor(),
                 title: "Construction Of Dam",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum aliquam dolores animi temporibus possimus!"
             },
             {
-                abreviation: "COR",
+                abbreviation: "COR",
+                color: generateRandomLightColor(),
                 title: "Construction Of Road",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum aliquam dolores animi temporibus possimus!"
             },
