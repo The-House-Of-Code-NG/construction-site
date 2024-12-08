@@ -3,10 +3,10 @@ import React, { useState, useMemo } from 'react';
 
 
 const HomepageAbout = ({ data }: { data: any }) => {
-  const [degreesToShow, setDegreesToShow] = useState<number>(3);
-  const visibleHistory = useMemo(() => {
-    return data.history.slice(0, degreesToShow);
-  }, [degreesToShow]);
+  const [categoriesToShow, setCategoriesToShow] = useState<number>(3);
+  const visibleCategory = useMemo(() => {
+    return data.categories.slice(0, categoriesToShow);
+  }, [categoriesToShow]);
 
   return (
     <section className="pb-10 lg:pb-14">
@@ -24,24 +24,24 @@ const HomepageAbout = ({ data }: { data: any }) => {
             >{data.description}</p>
             <div className="pb-6 border-b border-appGray-100 mb-6 lg:pb-8 lg:mb-8">
               <div className="leading-none font-medium tracking-[-0.41px] mb-5 lg:text-xl lg:leading-none">
-                History
+                Categories
               </div>
               <div className="flex flex-wrap gap-3">
-                {visibleHistory.map((degree: any, index: number) => (
+                {visibleCategory.map((degree: any, index: number) => (
                   <React.Fragment key={index}>
                     <div className="flex text-sm leading-none tracking-[-0.41px] text-appGray-500 px-4 py-3 border border-appGray-200 rounded-[32px] lg:text-base lg:leading-none">
                       {degree}
                     </div>
-                    {visibleHistory.length < data.history.length && (
-                      <button
-                        className="flex px-4 py-3 text-sm leading-none tracking-[-0.41px] text-white bg-appGray-600 font-medium rounded-[32px] lg:text-base lg:leading-none"
-                        onClick={() => setDegreesToShow(999)}
-                      >
-                        See all
-                      </button>
-                    )}
                   </React.Fragment>
                 ))}
+                {visibleCategory.length < data.categories.length && (
+                  <button
+                    className="flex px-4 py-3 text-sm leading-none tracking-[-0.41px] text-white bg-appGray-600 font-medium rounded-[32px] lg:text-base lg:leading-none"
+                    onClick={() => setCategoriesToShow(999)}
+                  >
+                    See all
+                  </button>
+                )}
               </div>
             </div>
           </div>

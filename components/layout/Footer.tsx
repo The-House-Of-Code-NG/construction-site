@@ -1,7 +1,8 @@
-import ContentManager from '@/components/ContentManager';
-
-import { BCMSImage } from 'next-plugin-bcms/components';
-import BCMSLogo from '@/assets/media/bcms-logo.svg';
+import { FiFacebook, FiInstagram, FiX } from 'react-icons/fi'
+import THCLogo from '@/assets/media/site-logo-white.png';
+import homepage from '@/data';
+import Link from 'next/link';
+import Image from 'next/image';
 interface FooterProps {
   data?: any;
 }
@@ -9,6 +10,23 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ data }) => {
   const currentYear = new Date().getFullYear();
 
+  const social = [
+    {
+        icon: <FiFacebook className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
+        label: "Facebook",
+        path: "facebook.com"
+    },
+    {
+        icon: <FiX className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
+        label: "Twitter",
+        path: "x.com"
+    },
+    {
+        icon: <FiInstagram className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
+        label: "Instagam",
+        path: "instagram.com"
+    }
+]
   return (
     <footer className="pb-10">
       <div className="container">
@@ -18,24 +36,24 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
           </div>
           <nav>
             <ul className="grid grid-cols-[repeat(2,auto)] gap-4 md:flex md:items-center md:gap-6">
-              {/* {data.nav.map((item, index) => (
-                <li key={index}>
-                  <ContentManager
-                    item={item}
-                    className="text-sm leading-none tracking-[-0.41px] lg:text-base lg:leading-none"
-                  />
+              {homepage.headerLinks.map((item, index) => (
+                <li className='cursor-pointer' key={index}>
+                  <Link href={item.path}>
+                    <p className="text-sm leading-none tracking-[-0.41px] lg:text-base lg:leading-none">{item.label}</p>
+                  </Link>
                 </li>
-              ))} */}
+              ))}
+              
             </ul>
           </nav>
         </div>
         <div className="sm:grid sm:grid-cols-2 lg:flex lg:items-center lg:justify-between">
           <div className="pb-6 border-b border-appGray-100 mb-6 sm:col-span-2 md:pb-8 md:mb-8 lg:col-span-1 lg:order-2 lg:border-none lg:pb-0 lg:mb-0">
             <ul className="grid grid-cols-2 gap-3 max-w-max sm:grid-cols-4">
-              {/* {data.social.map((item, index) => (
+              {social.map((item, index) => (
                 <li key={index}>
                   <a
-                    href={item.url}
+                    href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center justify-center px-4 py-[9px] border rounded-[32px] lg:py-3 ${
@@ -45,18 +63,16 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                     }`}
                   >
                     {item.icon && (
-                      <BCMSImage
-                        media={item.icon}
-                        svg
-                        className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4"
-                      />
+                      <>
+                        {item.icon}
+                      </>
                     )}
                     <span className="text-sm leading-none font-medium tracking-[-0.41px] uppercase lg:text-base lg:leading-none">
                       {item.label}
                     </span>
                   </a>
                 </li>
-              ))} */}
+              ))}
             </ul>
           </div>
           <a
@@ -68,7 +84,7 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
             <span className="text-sm leading-none tracking-[-0.41px] text-appGray-500 mr-2 lg:text-base lg:leading-none lg:mr-3">
               Powered by
             </span>
-            <BCMSLogo className="w-[55px] lg:w-[83px]" />
+            <Image src={THCLogo} width={200} height={82} />
           </a>
           <div className="text-sm leading-none tracking-[-0.41px] sm:text-right lg:order-3 lg:text-base lg:leading-none">
             &copy; {currentYear} Personal website. All rights reserved

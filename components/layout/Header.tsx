@@ -4,6 +4,7 @@ import Link from 'next/link';
 import PinIcon from '@/assets/icons/pin.svg';
 import MenuIcon from '@/assets/icons/menu.svg';
 import XIcon from '@/assets/icons/x.svg';
+import homepage from '@/data';
 
 interface HeaderProps {
   data?: any;
@@ -60,14 +61,15 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
               },
             )}
           >
-            {/* {data.nav.map((item, index) => (
-              <li key={index}>
-                <ContentManager
-                  item={item}
-                  className="text-sm leading-none font-medium tracking-[-0.41px] md:text-base md:leading-none transition-colors duration-300 md:hover:text-appText"
-                />
+            {homepage.headerLinks.map((item, index) => (
+              <li className='cursor-pointer' key={index}>
+                <Link href={item.path}>
+                  <p
+                    className="text-sm leading-none font-medium tracking-[-0.41px] md:text-base md:leading-none transition-colors duration-300 md:hover:text-appText"
+                  >{item.label}</p>
+                </Link>
               </li>
-            ))} */}
+            ))}
           </ul>
           <div className="flex items-center justify-end flex-1 leading-none font-medium tracking-[-0.41px] max-lg:hidden">
             <PinIcon className="w-4 h-4 mr-1" />

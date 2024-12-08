@@ -1,6 +1,7 @@
 import { HomeTestimonials } from '@/types';
 import ContentManager from '@/components/ContentManager';
 import { BCMSImage } from 'next-plugin-bcms/components';
+import avatar from '@/assets/media/person-3.png'
 interface HomepageTestimonialsProps {
   data: HomeTestimonials;
 }
@@ -28,27 +29,19 @@ const HomepageTestimonials = ({ data }: { data: any }) => {
                     className="pb-6 border-b border-appGray-100 lg:pb-8"
                   >
                     <div className="flex items-center mb-[14px] lg:mb-6">
-                      {/* <BCMSImage
-                        media={item.author.avatar}
-                        options={{
-                          sizes: {
-                            exec: [
-                              {
-                                width: 100,
-                                height: 100,
-                              },
-                            ],
-                          },
-                        }}
+                       <img
+                        src={avatar as any}
+                        width={100}
+                        height={100}
                         className="w-8 h-8 rounded-full overflow-hidden cover mr-2.5 lg:w-12 lg:h-12 lg:mr-4"
-                      /> */}
+                      />
                       <div className="text-sm leading-none tracking-[-0.41px] font-Helvetica lg:text-lg lg:leading-none">
-                        {item.author.name}
+                        {item.author.executiveRole} At {item.author.companyName}
                       </div>
                     </div>
                     <p
                       className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-[15px] lg:leading-[1.4]"
-                    >{item.content}</p>
+                    >{item.testimony}</p>
                   </div>
                 ))}
             </div>

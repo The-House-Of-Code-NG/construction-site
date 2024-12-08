@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import AnimatedTitle from '@/components/AnimatedTitle';
+import homepage from '@/data';
 
 const ServicesPage: React.FC = () => {
   return (
@@ -8,13 +9,13 @@ const ServicesPage: React.FC = () => {
       <div className="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
         <div className="container">
           <AnimatedTitle
-            title="The Services"
+            title={homepage.services.title}
             className="mb-10 md:mb-20 lg:mb-[192px]"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="grid grid-cols-1 gap-10 lg:gap-[72px]">
-            {/* {page.services &&
-              page.services.map((service, index) => (
+            {homepage.services &&
+              homepage.services.items.map((service, index) => (
                 <div
                   key={index}
                   className="lg:grid lg:grid-cols-[1fr,378px,minmax(auto,1fr)] lg:items-start lg:gap-10"
@@ -26,10 +27,9 @@ const ServicesPage: React.FC = () => {
                     </h2>
                   </div>
                   <div className="max-lg:mb-6 lg:max-w-[378px]">
-                    <ContentManager
-                      item={service.description}
+                    <p
                       className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-[14px] lg:text-base lg:leading-[1.4] lg:mb-6"
-                    />
+                    >{service.description}</p>
                     <div className="leading-none tracking-[-0.41px] font-Helvetica lg:text-xl lg:leading-none">
                       Start from ${service.start_price}
                     </div>
@@ -42,7 +42,7 @@ const ServicesPage: React.FC = () => {
                     </button>
                   </div>
                 </div>
-              ))} */}
+              ))}
           </div>
         </div>
       </div>

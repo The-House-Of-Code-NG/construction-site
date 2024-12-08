@@ -50,7 +50,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                 )}
                 style={{ backgroundColor: item.color }}
               >
-                <h3 className="leading-none tracking-[-0.41px] text-white mb-5 lg:text-xl lg:leading-none lg:mb-6">
+                <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
                   {item.title}
                 </h3>
                 <Link href={`/portfolio/`}>

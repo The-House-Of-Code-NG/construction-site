@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import AnimatedTitle from '@/components/AnimatedTitle';
+import homepage from '@/data';
+import avatar from '@/assets/media/momcilo.png'
+import Image from 'next/image';
 
 
 const TestimonialsPage: React.FC = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
 
-  // const activeItem = page.items[activeItemIndex];
+  const activeItem = homepage.testimonials.items[activeItemIndex];
 
   return (
     <PageWrapper>
@@ -18,44 +21,35 @@ const TestimonialsPage: React.FC = () => {
             titleClassName="text-[7.125rem] flex-shrink-0 leading-none font-Helvetica tracking-[.0994rem] sm:text-[11.875rem] md:text-[13.75rem] lg:text-[18.75rem] lg:tracking-[.3494rem] xl:text-[29rem]"
           />
           <div className="flex flex-wrap justify-center gap-4 mb-12 max-w-[53.5rem] mx-auto lg:gap-6 lg:mb-[10.625rem]">
-            {/* {page.items.map((item, index) => (
+            {homepage.testimonials.items.map((item, index) => (
               <button
                 key={index}
                 className="flex"
                 onClick={() => setActiveItemIndex(index)}
               >
-                <BCMSImage
-                  media={item.author.avatar}
-                  options={{
-                    sizes: {
-                      exec: [
-                        {
-                          width: 100,
-                          height: 100,
-                        },
-                      ],
-                    },
-                  }}
+                 <Image
+                  src={avatar as any}
+                  width={100}
+                  height={100}
+                  
                   className={`w-10 h-10 rounded-full overflow-hidden cover transition-all duration-300 lg:w-16 lg:h-16 ${
                     activeItemIndex === index ? 'scale-125' : 'opacity-20'
                   }`}
                 />
               </button>
-            ))} */}
+            ))}
           </div>
           <div className="flex flex-col items-center text-center max-w-[74.625rem] mx-auto mb-6 lg:mb-12">
             <h3 className="text-xl leading-none tracking-[-0.0256rem] font-Helvetica mb-[.875rem] lg:text-[2rem] lg:mb-10">
-              {/* {activeItem?.author.name} */}
-              Just a title
+            {activeItem.author.executiveRole} At {activeItem.author.companyName}
+              
             </h3>
-            {/* <ContentManager
-              item={activeItem?.content || []}
+            <p
               className="text-sm leading-[1.4] tracking-[-0.0256rem] text-appGray-500 lg:text-[2rem]"
-            /> */}
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui tempora repudiandae error quibusdam vel vero libero delectus, quasi eveniet itaque. Distinctio repellendus, voluptates vero adipisci inventore reprehenderit maxime reiciendis.</p>
+            >{activeItem?.testimony || []}</p>
           </div>
           <div className="flex items-center gap-2 lg:gap-6">
-            {/* {page.items.map((_, index) => (
+            {homepage.testimonials.items.map((_, index) => (
               <button
                 key={index}
                 className={`relative h-0.5 transition-all duration-300 after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:w-full after:h-5 lg:h-1 ${
@@ -65,7 +59,7 @@ const TestimonialsPage: React.FC = () => {
                 }`}
                 onClick={() => setActiveItemIndex(index)}
               />
-            ))} */}
+            ))}
           </div>
         </div>
       </div>

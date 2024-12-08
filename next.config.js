@@ -35,6 +35,16 @@ const nextConfig = {
     locales: ['en'],
     defaultLocale: 'en',
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+        port: '',
+        pathname: '/featured/**',
+      },
+    ],
+  },
   async headers() {
     return [
       {
