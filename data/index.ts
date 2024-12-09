@@ -29,6 +29,10 @@ const homepage = {
             label: "Testimonials",
             path: "/testimonials"
         },
+        {
+            label: "Contact",
+            path: "/contact"
+        },
     ],
     hero: {
         title: "Building Tomorrow, Engineering Excellence",
