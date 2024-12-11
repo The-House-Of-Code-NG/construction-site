@@ -26,12 +26,11 @@ const ContactPage: React.FC = () => {
   });
 
   const me = useRef({
-    phone: '080 6161 82 61, 080 2335 68 46',
-    email: 'mohommedshehu@gmail.com',
+    phone: '+234 803 082 6961, +234 806 161 8261',
+    email: 'Suite B25 Ummi Plaza, Tradefair Complex,  off Zaria Road, Kano.',
   });
 
   const handleUpdateForm = (field: keyof ContactForm, value: string): void => {
-    console.log(value)
     setForm((prev) => ({ ...prev, [field]: value }));
   };
 
@@ -80,13 +79,13 @@ const ContactPage: React.FC = () => {
             />
             <FormText
               value={me.current.email}
-              type="email"
-              label="Email"
+              type="texr"
+              label="Address"
               isReadOnly={true}
               className="mb-8 md:mb-14 lg:mb-16"
             />
             <div className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]">
-              To reach out to me, <br />
+              To reach out to us, <br />
               please fill in the form below.
             </div>
             <FormText

@@ -5,7 +5,8 @@ import PinIcon from '@/assets/icons/pin.svg';
 import MenuIcon from '@/assets/icons/menu.svg';
 import XIcon from '@/assets/icons/x.svg';
 import homepage from '@/data';
-
+import Image from "next/image";
+import Logo from '@/assets/media/logo.png'
 interface HeaderProps {
   data?: any;
 }
@@ -40,16 +41,8 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
       >
         <nav className="relative flex items-center justify-between pt-6">
           <Link href="/">
-            <a className="flex md:flex-1" aria-label="Home page">
-              {/* <img
-                src={data.logo}
-                svg
-                className={classNames('w-[34px] md:w-[50px]', {
-                  'max-md:grayscale max-md:brightness-100 max-md:invert':
-                    showMobileMenu,
-                })}
-              /> */}
-              Alpha Zeta
+            <a className=" flex md:flex-1" aria-label="Home page">
+              <Image src={Logo} width={250} height={50}/>
             </a>
           </Link>
           <ul

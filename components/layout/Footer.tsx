@@ -1,8 +1,10 @@
 import { FiFacebook, FiInstagram, FiX } from 'react-icons/fi'
-import THCLogo from '@/assets/media/site-logo-white.png';
+import ImagyneLogo from '@/assets/media/imagyne.jpg'
 import homepage from '@/data';
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from "@/assets/media/logo.png";
+import React from "react";
 interface FooterProps {
   data?: any;
 }
@@ -32,7 +34,11 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
       <div className="container">
         <div className="pb-6 border-b border-appGray-100 mb-6 md:flex md:items-end md:justify-between md:pb-8 md:mb-8">
           <div className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica max-w-[174px] max-md:mb-6 md:text-3xl md:leading-[1.2] md:max-w-[300px] lg:text-[40px] lg:max-w-[394px]">
-            Constructt
+              <Link href="/">
+                  <a className=" flex md:flex-1" aria-label="Home page">
+                      <Image src={Logo} width={250} height={50}/>
+                  </a>
+              </Link>
           </div>
           <nav>
             <ul className="grid grid-cols-[repeat(2,auto)] gap-4 md:flex md:items-center md:gap-6">
@@ -43,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                   </Link>
                 </li>
               ))}
-              
+
             </ul>
           </nav>
         </div>
@@ -76,18 +82,18 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
             </ul>
           </div>
           <a
-            href="https://thebcms.com/"
+            href="https://imagyne.tech"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center max-md:mb-4 lg:order-1"
           >
-            <span className="text-sm leading-none tracking-[-0.41px] text-appGray-500 mr-2 lg:text-base lg:leading-none lg:mr-3">
-              Powered by
+            <span className="text-sm leading-none tracking-[-0.41px] text-appGray-500 lg:text-base lg:leading-none lg:mr-3">
+              This site is powered by
             </span>
-            <Image src={THCLogo} width={200} height={82} />
+            <Image src={ImagyneLogo} width={100} height={100} />
           </a>
           <div className="text-sm leading-none tracking-[-0.41px] sm:text-right lg:order-3 lg:text-base lg:leading-none">
-            &copy; {currentYear} Personal website. All rights reserved
+            &copy; {currentYear} Alpha Zeta. All rights reserved
           </div>
         </div>
       </div>

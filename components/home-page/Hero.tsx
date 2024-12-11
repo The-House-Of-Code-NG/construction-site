@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HomePageBg from "@/assets/media/hompage.png"
+import HomePageBg2  from "@/assets/media/hero.jpg"
 
 const HomepageHero = ({ data }: { data: any }) => {
   return (
@@ -50,7 +50,7 @@ const HomepageHero = ({ data }: { data: any }) => {
           </div>
           <div className="relative rounded-3xl overflow-hidden aspect-square md:aspect-auto xl:aspect-[1.3]">
             <Image
-              src={HomePageBg as any}
+              src={HomePageBg2 as any}
               className="absolute top-0 left-0 w-full h-full cover"
               width={800}
               height={612}

@@ -6,19 +6,22 @@ interface TitleProps {
   title: string;
   titleClassName?: string;
   className?: string;
+
+  selector?: string
 }
 
 const Title: React.FC<TitleProps> = ({
   title,
   titleClassName = '',
   className = '',
+    selector
 }) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     if (titleRef.current) {
       const containerWidth =
-        document.querySelector('.container')?.clientWidth || 0;
+        document.querySelector(selector ?? '.container')?.clientWidth || 0;
 
       gsap.to(titleRef.current, {
         x: containerWidth - titleRef.current.clientWidth,

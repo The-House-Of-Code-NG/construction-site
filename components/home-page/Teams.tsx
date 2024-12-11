@@ -1,5 +1,6 @@
 import avatar from '@/assets/media/profile2.jpg'
 import Image from 'next/image';
+import React from "react";
 
 const HomepageTeam = ({ data }: { data?: any }) => {
     return (
@@ -18,16 +19,18 @@ const HomepageTeam = ({ data }: { data?: any }) => {
         </div>
             <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                
+
                {data.items.map((item: any, index: number) => (
-                 <div key={index} className="bg-white shadow-md rounded-lg text-center">
-                 <div className="mb-4">
+                 <div key={index} className="bg-white shadow-md rounded-lg p-4 text-center"
+                      // style={{ backgroundColor: item.color }}
+                 >
                      <Image
-                     src={avatar as any}
-                     alt="Team Member" 
-                     className="w-32 h-32 mx-auto object-cover grayscale"
+                         width={300}
+                         height={300}
+                     src={item.image}
+                     alt="Team Member"
+                     className=" rounded-lg mx-auto object-cover grayscale"
                      />
-                 </div>
                      <div className="p-4">
                          <h3 className="text-lg font-semibold">{item.name}</h3>
                  <p className="text-gray-500">{item.role}</p>
@@ -37,9 +40,15 @@ const HomepageTeam = ({ data }: { data?: any }) => {
                </div>
                </div>
             </div>
+            <div className="flex flex-row justify-center my-10">
+                <a href='/about'
+                   className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
+                >
+                    View all members
+                </a>
+            </div>
         </section>
     );
   };
-  
+
   export default HomepageTeam;
-  

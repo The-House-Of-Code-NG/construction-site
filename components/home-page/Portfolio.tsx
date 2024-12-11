@@ -2,15 +2,11 @@ import React from 'react';
 import { A11y, Pagination } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import { HomePortfolio } from '@/types';
-import { BCMSImage } from 'next-plugin-bcms/components';
-import ContentManager from '@/components/ContentManager';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import Link from 'next/link';
 import classNames from 'classnames';
+import Image from "next/image";
 
-interface HomepagePortfolioProps {
-  data: HomePortfolio;
-}
 
 SwiperCore.use([A11y, Pagination]);
 
@@ -39,7 +35,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-4 xl:grid-cols-[repeat(16,1fr)]">
           {data.items &&
-            data.items.map((item: any, index: number) => (
+            data.items.slice(0,4).map((item: any, index: number) => (
               <div
                 key={index}
                 className={classNames(
@@ -50,9 +46,20 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                 )}
                 style={{ backgroundColor: item.color }}
               >
-                <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
-                  {item.title}
-                </h3>
+                <div className="flex flex-row items-center justify-between">
+                  <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
+                    {item.title}
+                  </h3>
+                  <h3  className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">{item?.contractAmount}</h3>
+                </div>
+                <div className="my-3 space-y-2">
+                  <p className="text-sm leading-none tracking-[-0.41px] font-Helvetica lg:text-[16px] lg:leading-none">
+                    {item.client}
+                  </p>
+                  <p className="text-xs leading-none tracking-[-0.41px] font-Helvetica lg:text-[12px] lg:leading-none">
+                    {item.description}
+                  </p>
+                </div>
                 <Link href={`/portfolio/`}>
                   <a className="group relative flex mb-auto w-full xl:flex-1">
                     <Swiper
@@ -65,11 +72,8 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                       {item.gallery &&
                         item.gallery.map((galleryItem: any, galleryIndex: number) => (
                           <SwiperSlide key={galleryIndex} className="w-full">
-                            <img
+                            <Image
                               src={galleryItem}
-                              width={840}
-                              height={580}
-                                    
                               className={classNames(
                                 'w-full h-full aspect-[1.45] cover rounded-3xl overflow-hidden',
                                 index % 2 === 2 || index % 3 === 0
@@ -100,6 +104,13 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                 )}
               </div>
             ))}
+        </div>
+        <div className="flex flex-row justify-center my-10">
+          <a href='/portfolio'
+                className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
+          >
+            View all projects
+          </a>
         </div>
       </div>
     </section>

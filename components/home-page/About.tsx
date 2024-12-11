@@ -24,7 +24,7 @@ const HomepageAbout = ({ data }: { data: any }) => {
             >{data.description}</p>
             <div className="pb-6 border-b border-appGray-100 mb-6 lg:pb-8 lg:mb-8">
               <div className="leading-none font-medium tracking-[-0.41px] mb-5 lg:text-xl lg:leading-none">
-                Categories
+                What we do
               </div>
               <div className="flex flex-wrap gap-3">
                 {visibleCategory.map((degree: any, index: number) => (
