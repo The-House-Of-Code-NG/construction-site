@@ -17,7 +17,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({ children }) => {
     // @ts-ignore
     'Start your construction journey with US';
 
-  const image = '/thumbnail.jpg';
+  const image = '/thumbnail.png';
   const domain = 'https://alphazetaglobaltech.com/';
   return (
     <div className="overflow-hidden">
