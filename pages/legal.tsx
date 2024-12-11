@@ -3,9 +3,7 @@ import AnimatedTitle from '@/components/AnimatedTitle';
 
 const LegalPage: React.FC = () => {
   return (
-    <PageWrapper
-      defaultTitle="Legal"
-    >
+    <PageWrapper defaultTitle="Legal">
       <div className="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
         <div className="container">
           <AnimatedTitle

@@ -2,9 +2,6 @@ import React from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import AnimatedTitle from '@/components/AnimatedTitle';
 
-import Link from 'next/link';
-
-
 import homepage from '@/data';
 import Image from 'next/image';
 
@@ -20,33 +17,33 @@ const PortfolioPage = () => {
           />
           <div className="grid grid-cols-1 gap-[50px] lg:gap-20">
             {homepage.portfolio.items.map((item, index) => (
-                <div className="">
-                 <div className="max-h-[500px] w-full" >
-                   <Image
-                       src={item.gallery[0]}
-                       height={500}
-                       className="w-f h-[200px] md:h-[500px] aspect-[2] object-cover rounded-[6px] overflow-hidden mb-4 lg:rounded-3xl lg:mb-12"
-                   />
-                 </div>
-                  <div>
-                    <div className="lg:flex lg:items-start my-10 lg:justify-between">
-                      <div>
-                        <h3 className="flex text-sm leading-none max-w-[80%] tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
-                          {item.title}
-
-                        </h3>
-                        <p
-                            className="text-normal leading-[1.4] tracking-[-0.41px]  lg:text-[15px] lg:max-w-[551px]"
-                        >{item.client}</p>
-                      </div>
-                      <p className="flex text-sm leading-none tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">{item.contractAmount}</p>
-                  </div>
-
-                    <p
-                        className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-[15px] lg:max-w-[551px]"
-                    >{item.description}</p>
-                  </div>
+              <div key={index + item}>
+                <div className="max-h-[500px] w-full">
+                  <Image
+                    src={item.gallery[0]}
+                    height={500}
+                    className="w-f h-[200px] md:h-[500px] aspect-[2] object-cover rounded-[6px] overflow-hidden mb-4 lg:rounded-3xl lg:mb-12"
+                  />
                 </div>
+                <div>
+                  <div className="lg:flex lg:items-start my-10 lg:justify-between">
+                    <div>
+                      <h3 className="flex text-sm leading-none max-w-[80%] tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
+                        {item.title}
+                      </h3>
+                      <p className="text-normal leading-[1.4] tracking-[-0.41px]  lg:text-[15px] lg:max-w-[551px]">
+                        {item.client}
+                      </p>
+                    </div>
+                    <p className="flex text-sm leading-none tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
+                      {item.contractAmount}
+                    </p>
+                  </div>
+                  <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-[15px] lg:max-w-[551px]">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>

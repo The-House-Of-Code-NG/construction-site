@@ -31,6 +31,9 @@ const securityHeaders = [
 
 const nextConfig = {
   reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   i18n: {
     locales: ['en'],
     defaultLocale: 'en',

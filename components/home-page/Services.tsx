@@ -1,4 +1,4 @@
-const HomepageServices = ({ data, data_ag }: { data: any, data_ag: any }) => {
+const HomepageServices = ({ data, data_ag }: { data: any; data_ag: any }) => {
   return (
     <section className="pb-10 lg:pb-14">
       <div className="container">
@@ -9,9 +9,9 @@ const HomepageServices = ({ data, data_ag }: { data: any, data_ag: any }) => {
               {data.title}
             </h2>
           </div>
-          <p
-            className="homeServices--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 md:max-w-[761px] lg:text-base lg:leading-[1.4]"
-          >{data.description}</p>
+          <p className="homeServices--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 md:max-w-[761px] lg:text-base lg:leading-[1.4]">
+            {data.description}
+          </p>
         </div>
         <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {data.items &&
@@ -30,9 +30,9 @@ const HomepageServices = ({ data, data_ag }: { data: any, data_ag: any }) => {
                     {service.title}
                   </h3>
                 </div>
-                <p
-                  className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-300"
-                >{service.description}</p>
+                <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-300">
+                  {service.description}
+                </p>
               </li>
             ))}
         </ul>
@@ -45,13 +45,13 @@ const HomepageServices = ({ data, data_ag }: { data: any, data_ag: any }) => {
               {data_ag.title}
             </h2>
           </div>
-          <p
-            className="homeServices--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 md:max-w-[761px] lg:text-base lg:leading-[1.4]"
-          >{data_ag.description}</p>
+          <p className="homeServices--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 md:max-w-[761px] lg:text-base lg:leading-[1.4]">
+            {data_ag.description}
+          </p>
         </div>
         <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {data_ag.items &&
-              data_ag.items.map((service: any, index: number) => (
+            data_ag.items.map((service: any, index: number) => (
               <li key={index} className="bg-[#F7F7F7] rounded-2xl p-6">
                 <div className="flex items-center mb-4">
                   <div
@@ -66,9 +66,9 @@ const HomepageServices = ({ data, data_ag }: { data: any, data_ag: any }) => {
                     {service.title}
                   </h3>
                 </div>
-                <p
-                  className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-300"
-                >{service.description}</p>
+                <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-300">
+                  {service.description}
+                </p>
               </li>
             ))}
         </ul>

@@ -1,12 +1,10 @@
 import React from 'react';
 import { A11y, Pagination } from 'swiper/modules';
 import SwiperCore from 'swiper';
-import { HomePortfolio } from '@/types';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import Image from "next/image";
-
+import Image from 'next/image';
 
 SwiperCore.use([A11y, Pagination]);
 
@@ -28,14 +26,14 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
             </h2>
           </div>
           <div>
-            <p
-              className="homeAbout--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 md:max-w-[761px] lg:text-base lg:leading-[1.4]"
-            >{data.description}</p>
+            <p className="homeAbout--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 md:max-w-[761px] lg:text-base lg:leading-[1.4]">
+              {data.description}
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-4 xl:grid-cols-[repeat(16,1fr)]">
           {data.items &&
-            data.items.slice(0,4).map((item: any, index: number) => (
+            data.items.slice(0, 4).map((item: any, index: number) => (
               <div
                 key={index}
                 className={classNames(
@@ -50,7 +48,9 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                   <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
                     {item.title}
                   </h3>
-                  <h3  className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">{item?.contractAmount}</h3>
+                  <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
+                    {item?.contractAmount}
+                  </h3>
                 </div>
                 <div className="my-3 space-y-2">
                   <p className="text-sm leading-none tracking-[-0.41px] font-Helvetica lg:text-[16px] lg:leading-none">
@@ -60,7 +60,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                     {item.description}
                   </p>
                 </div>
-                <Link href={`/portfolio/`}>
+                <Link href={'/portfolio/'}>
                   <a className="group relative flex mb-auto w-full xl:flex-1">
                     <Swiper
                       {...sliderOptions}
@@ -70,19 +70,21 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                       className="w-full rounded-3xl overflow-hidden"
                     >
                       {item.gallery &&
-                        item.gallery.map((galleryItem: any, galleryIndex: number) => (
-                          <SwiperSlide key={galleryIndex} className="w-full">
-                            <Image
-                              src={galleryItem}
-                              className={classNames(
-                                'w-full h-full aspect-[1.45] cover rounded-3xl overflow-hidden',
-                                index % 2 === 2 || index % 3 === 0
-                                  ? 'xl:aspect-[1.45]'
-                                  : 'xl:aspect-[1.84]',
-                              )}
-                            />
-                          </SwiperSlide>
-                        ))}
+                        item.gallery.map(
+                          (galleryItem: any, galleryIndex: number) => (
+                            <SwiperSlide key={galleryIndex} className="w-full">
+                              <Image
+                                src={galleryItem}
+                                className={classNames(
+                                  'w-full h-full aspect-[1.45] cover rounded-3xl overflow-hidden',
+                                  index % 2 === 2 || index % 3 === 0
+                                    ? 'xl:aspect-[1.45]'
+                                    : 'xl:aspect-[1.84]',
+                                )}
+                              />
+                            </SwiperSlide>
+                          ),
+                        )}
                     </Swiper>
                     <div
                       className="absolute z-10 top-0 left-0 w-full h-full rounded-3xl flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100"
@@ -106,8 +108,9 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
             ))}
         </div>
         <div className="flex flex-row justify-center my-10">
-          <a href='/portfolio'
-                className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
+          <a
+            href="/portfolio"
+            className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
           >
             View all projects
           </a>

@@ -1,6 +1,4 @@
-import ContentManager from '@/components/ContentManager';
 import React, { useState, useMemo } from 'react';
-
 
 const HomepageAbout = ({ data }: { data: any }) => {
   const [categoriesToShow, setCategoriesToShow] = useState<number>(3);
@@ -19,9 +17,9 @@ const HomepageAbout = ({ data }: { data: any }) => {
             </h2>
           </div>
           <div>
-            <p
-              className="homeAbout--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 pb-6 border-b border-appGray-100 mb-6 md:max-w-[761px] lg:text-base lg:leading-[1.4] lg:pb-8 lg:mb-8"
-            >{data.description}</p>
+            <p className="homeAbout--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 pb-6 border-b border-appGray-100 mb-6 md:max-w-[761px] lg:text-base lg:leading-[1.4] lg:pb-8 lg:mb-8">
+              {data.description}
+            </p>
             <div className="pb-6 border-b border-appGray-100 mb-6 lg:pb-8 lg:mb-8">
               <div className="leading-none font-medium tracking-[-0.41px] mb-5 lg:text-xl lg:leading-none">
                 What we do

@@ -1,24 +1,17 @@
 import React, { useState, useRef } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
-import PinIcon from '@/assets/icons/pin.svg';
 import MenuIcon from '@/assets/icons/menu.svg';
 import XIcon from '@/assets/icons/x.svg';
 import homepage from '@/data';
-import Image from "next/image";
-import Logo from '@/assets/media/logo.png'
+import Image from 'next/image';
+import Logo from '@/assets/media/logo.png';
 interface HeaderProps {
   data?: any;
 }
 
-const Header: React.FC<HeaderProps> = ({ data }) => {
+const Header: React.FC<HeaderProps> = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const timeNow = new Date().toLocaleTimeString('en-US', {
-    timeZone: 'Australia/Sydney',
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: true,
-  });
 
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -42,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
         <nav className="relative flex items-center justify-between pt-6">
           <Link href="/">
             <a className=" flex md:flex-1" aria-label="Home page">
-              <Image src={Logo} width={250} height={50}/>
+              <Image src={Logo} width={250} height={50} />
             </a>
           </Link>
           <ul
@@ -55,11 +48,11 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             )}
           >
             {homepage.headerLinks.map((item, index) => (
-              <li className='cursor-pointer' key={index}>
+              <li className="cursor-pointer" key={index}>
                 <Link href={item.path}>
-                  <p
-                    className="text-sm leading-none font-medium tracking-[-0.41px] md:text-base md:leading-none transition-colors duration-300 md:hover:text-appText"
-                  >{item.label}</p>
+                  <p className="text-sm leading-none font-medium tracking-[-0.41px] md:text-base md:leading-none transition-colors duration-300 md:hover:text-appText">
+                    {item.label}
+                  </p>
                 </Link>
               </li>
             ))}

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HomePageBg2  from "@/assets/media/hero.jpg"
+import HomePageBg2 from '@/assets/media/hero.jpg';
 
 const HomepageHero = ({ data }: { data: any }) => {
   return (
@@ -12,9 +12,9 @@ const HomepageHero = ({ data }: { data: any }) => {
               <h1 className="leading-[1.2] tracking-[-0.41px] mb-2.5 lg:text-[34px] lg:leading-[1.2] lg:mb-4">
                 {data.title}
               </h1>
-              <p
-                className="text-xs leading-[1.4] tracking-[-0.41px] text-appGray-400 pr-[70px] mb-8 lg:text-base lg:leading-[1.4] lg:mb-8"
-              >{data.description}</p>
+              <p className="text-xs leading-[1.4] tracking-[-0.41px] text-appGray-400 pr-[70px] mb-8 lg:text-base lg:leading-[1.4] lg:mb-8">
+                {data.description}
+              </p>
               <Link href="/contact">
                 <a className="flex px-[18px] py-[14px] rounded-[32px] border border-appGray-200 text-xs leading-none tracking-[-0.41px] font-medium text-appGray-500 uppercase mb-14 lg:px-6 lg:py-4 lg:text-sm lg:leading-none">
                   Contact Us

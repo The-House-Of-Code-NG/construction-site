@@ -1,11 +1,4 @@
-import { HomeTestimonials } from '@/types';
-import ContentManager from '@/components/ContentManager';
-import { BCMSImage } from 'next-plugin-bcms/components';
-import avatar from '@/assets/media/person-3.png'
-interface HomepageTestimonialsProps {
-  data: HomeTestimonials;
-}
-
+import avatar from '@/assets/media/person-3.png';
 const HomepageTestimonials = ({ data }: { data: any }) => {
   return (
     <section className="pb-10 lg:pb-14">
@@ -18,9 +11,9 @@ const HomepageTestimonials = ({ data }: { data: any }) => {
             </h2>
           </div>
           <div className="md:max-w-[761px]">
-            <p
-              className="homeTestimonials--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 pb-6 border-b border-appGray-100 mb-6 lg:text-base lg:leading-[1.4] lg:pb-8 lg:mb-8"
-            >{data.description}</p>
+            <p className="homeTestimonials--description text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 pb-6 border-b border-appGray-100 mb-6 lg:text-base lg:leading-[1.4] lg:pb-8 lg:mb-8">
+              {data.description}
+            </p>
             <div className="grid grid-cols-1 gap-6 lg:gap-8">
               {data.items &&
                 data.items.map((item: any, index: number) => (
@@ -29,7 +22,7 @@ const HomepageTestimonials = ({ data }: { data: any }) => {
                     className="pb-6 border-b border-appGray-100 lg:pb-8"
                   >
                     <div className="flex items-center mb-[14px] lg:mb-6">
-                       <img
+                      <img
                         src={avatar as any}
                         width={100}
                         height={100}
@@ -39,9 +32,9 @@ const HomepageTestimonials = ({ data }: { data: any }) => {
                         {item.author.executiveRole} At {item.author.companyName}
                       </div>
                     </div>
-                    <p
-                      className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-[15px] lg:leading-[1.4]"
-                    >{item.testimony}</p>
+                    <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 lg:text-[15px] lg:leading-[1.4]">
+                      {item.testimony}
+                    </p>
                   </div>
                 ))}
             </div>

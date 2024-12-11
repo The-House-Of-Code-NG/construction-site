@@ -1,15 +1,9 @@
-import { GetStaticProps } from 'next';
-import { PageProps, AboutPageData } from '@/types';
-import { getBcmsClient } from 'next-plugin-bcms';
-import { getHeaderAndFooter } from '@/utils/page-props';
 import React from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import AnimatedTitle from '@/components/AnimatedTitle';
-import ContentManager from '@/components/ContentManager';
-import { BCMSImage } from 'next-plugin-bcms/components';
 import homepage from '@/data';
 import HomepageTeam from '@/components/home-page/Teams';
-const AboutPage: React.FC  = () => {
+const AboutPage: React.FC = () => {
   return (
     <PageWrapper>
       <div className="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
@@ -27,9 +21,9 @@ const AboutPage: React.FC  = () => {
               </div>
             </div>
             <div>
-              <p
-                className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-6 lg:text-base lg:leading-[1.4] lg:mb-8"
-              >{homepage.about.description}</p>
+              <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-6 lg:text-base lg:leading-[1.4] lg:mb-8">
+                {homepage.about.description}
+              </p>
               <div className="flex flex-wrap gap-3">
                 {homepage.about.categories.map((category, index) => (
                   <div
@@ -48,11 +42,8 @@ const AboutPage: React.FC  = () => {
           media={page.meta.cover}
           className="w-full cover aspect-[1.84] mb-10 lg:aspect-[2.59] lg:mb-20"
         /> */}
-       
       </div>
     </PageWrapper>
   );
 };
-;
-
 export default AboutPage;

@@ -10,7 +10,6 @@ import '@/assets/css/fonts.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {

@@ -5,20 +5,17 @@ import { PageProps } from '@/types';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
-  children,
-  defaultTitle,
-}) => {
+export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({ children }) => {
   const router = useRouter();
   const routePath = useMemo(() => router.asPath, [router.asPath]);
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const title =  'Alpha Zeta';
+  const title = 'Alpha Zeta';
   const description =
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    'Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!';
+    'Start your engineering journey with US';
 
   const image = '/thumbnail.jpg';
   const domain = 'https://personal-starter.thebcms.com';
@@ -27,7 +24,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
       <Head>
         <title>{`${title} - Alpha Zeta`}</title>
         <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Alpha Zeta`} />
+        <meta property="og:site_name" content={`${title} - Engineering`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -39,10 +36,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="twitter:url" content={`${domain}${routePath}`} />
-        <meta
-          property="twitter:title"
-          content={`${title} - Construction`}
-        />
+        <meta property="twitter:title" content={`${title} - Construction`} />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <meta property="twitter:description" content={description} />
@@ -57,13 +51,13 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/faviocn-16x16.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/faviocn-16x16.jpg"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />

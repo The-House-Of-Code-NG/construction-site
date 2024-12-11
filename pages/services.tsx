@@ -9,7 +9,7 @@ const ServicesPage: React.FC = () => {
       <div className="pt-8 pb-10 overflow-hidden md:pb-20 lg:pt-[72px] lg:pb-[120px]">
         <div className="container engineering_selector">
           <AnimatedTitle
-              selector=".engineering_selector"
+            selector=".engineering_selector"
             title={homepage.engineering_services.title}
             className="mb-10 md:mb-20 lg:mb-[192px]"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
@@ -28,9 +28,9 @@ const ServicesPage: React.FC = () => {
                     </h2>
                   </div>
                   <div className="max-lg:mb-6 lg:max-w-[378px]">
-                    <p
-                      className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-[14px] lg:text-base lg:leading-[1.4] lg:mb-6"
-                    >{service.description}</p>
+                    <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-[14px] lg:text-base lg:leading-[1.4] lg:mb-6">
+                      {service.description}
+                    </p>
                   </div>
                   <div className="flex lg:justify-end">
                     <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
@@ -45,7 +45,7 @@ const ServicesPage: React.FC = () => {
         </div>
         <div className="container mt-10 agricultural_selector">
           <AnimatedTitle
-              selector=".agricultural_selector"
+            selector=".agricultural_selector"
             title={homepage.agricultural_services.title}
             className="mb-10 md:mb-20 lg:mb-[192px]"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
@@ -64,9 +64,9 @@ const ServicesPage: React.FC = () => {
                     </h2>
                   </div>
                   <div className="max-lg:mb-6 lg:max-w-[378px]">
-                    <p
-                      className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-[14px] lg:text-base lg:leading-[1.4] lg:mb-6"
-                    >{service.description}</p>
+                    <p className="text-sm leading-[1.4] tracking-[-0.41px] text-appGray-400 mb-[14px] lg:text-base lg:leading-[1.4] lg:mb-6">
+                      {service.description}
+                    </p>
                   </div>
                   <div className="flex lg:justify-end">
                     <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">

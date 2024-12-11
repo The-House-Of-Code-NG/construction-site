@@ -7,14 +7,14 @@ interface TitleProps {
   titleClassName?: string;
   className?: string;
 
-  selector?: string
+  selector?: string;
 }
 
 const Title: React.FC<TitleProps> = ({
   title,
   titleClassName = '',
   className = '',
-    selector
+  selector,
 }) => {
   const titleRef = useRef<HTMLHeadingElement>(null);
 
