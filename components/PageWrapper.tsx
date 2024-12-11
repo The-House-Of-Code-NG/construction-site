@@ -15,10 +15,10 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({ children }) => {
   const description =
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    'Start your engineering journey with US';
+    'Start your construction journey with US';
 
   const image = '/thumbnail.jpg';
-  const domain = 'https://personal-starter.thebcms.com';
+  const domain = 'https://alphazetaglobaltech.com/';
   return (
     <div className="overflow-hidden">
       <Head>
