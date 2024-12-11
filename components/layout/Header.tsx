@@ -48,8 +48,8 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
                   'max-md:grayscale max-md:brightness-100 max-md:invert':
                     showMobileMenu,
                 })}
-              /> */} 
-              Constructt
+              /> */}
+              Alpha Zeta
             </a>
           </Link>
           <ul
@@ -72,10 +72,9 @@ const Header: React.FC<HeaderProps> = ({ data }) => {
             ))}
           </ul>
           <div className="flex items-center justify-end flex-1 leading-none font-medium tracking-[-0.41px] max-lg:hidden">
-            <PinIcon className="w-4 h-4 mr-1" />
-            <span>Sydney</span>
+            <span>Start a project</span>
             <div className="w-4 h-4 bg-appAccent rounded-full mx-2" />
-            <span>{timeNow}</span>
+            {/*<span>Naira worth of projects</span>*/}
           </div>
           <button
             className="flex md:hidden"

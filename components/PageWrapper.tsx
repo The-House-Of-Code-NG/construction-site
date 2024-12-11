@@ -14,7 +14,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const title = defaultTitle ?? 'Personal Website';
+  const title =  'Alpha Zeta';
   const description =
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
@@ -25,9 +25,9 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>{`${title} - Personal Website`}</title>
+        <title>{`${title} - Alpha Zeta`}</title>
         <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Personal Website`} />
+        <meta property="og:site_name" content={`${title} - Alpha Zeta`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -35,13 +35,13 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
           property="og:url"
           content={`${domain}${routePath}`}
         />
-        <meta property="og:title" content={`${title} - Personal Website`} />
+        <meta property="og:title" content={`${title} - Alpha Zeta`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="twitter:url" content={`${domain}${routePath}`} />
         <meta
           property="twitter:title"
-          content={`${title} - Personal Website`}
+          content={`${title} - Construction`}
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />

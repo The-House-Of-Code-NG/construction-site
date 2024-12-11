@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HomePageBg from "@/assets/media/hompage.jpg"
+import HomePageBg from "@/assets/media/hompage.png"
 
 const HomepageHero = ({ data }: { data: any }) => {
   return (
