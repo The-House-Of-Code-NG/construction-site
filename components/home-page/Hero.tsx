@@ -80,7 +80,7 @@ const HomepageHero = ({ data }: { data: any }) => {
           ease={10}
           color="#052162"
           refresh
-          size={2}
+          size={3}
         />
 
         <div></div>

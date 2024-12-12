@@ -30,7 +30,7 @@ const Footer: React.FC<FooterProps> = () => {
     },
   ];
   return (
-    <footer className="pb-10">
+    <footer className="py-10 bg-alphaBlue text-white">
       <div className="container">
         <div className="pb-6 border-b border-appGray-100 mb-6 md:flex md:items-end md:justify-between md:pb-8 md:mb-8">
           <div className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica max-w-[174px] max-md:mb-6 md:text-3xl md:leading-[1.2] md:max-w-[300px] lg:text-[40px] lg:max-w-[394px]">
@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = () => {
                     rel="noopener noreferrer"
                     className={`flex items-center justify-center px-4 py-[9px] border rounded-[32px] lg:py-3 ${
                       item.icon
-                        ? 'text-appGray-500 border-appGray-200'
+                        ? 'text-white border-white'
                         : 'text-white border-appText bg-appText'
                     }`}
                   >
@@ -84,10 +84,10 @@ const Footer: React.FC<FooterProps> = () => {
             rel="noopener noreferrer"
             className="flex items-center max-md:mb-4 lg:order-1"
           >
-            <span className="text-sm leading-none tracking-[-0.41px] text-appGray-500 lg:text-base lg:leading-none lg:mr-3">
+            <span className="text-sm leading-none tracking-[-0.41px] text-white lg:text-base lg:leading-none lg:mr-3">
               This site is powered by
             </span>
-            <Image src={ImagyneLogo} width={100} height={100} />
+            <Image src={ImagyneLogo} width={30} height={30} />
           </a>
           <div className="text-sm leading-none tracking-[-0.41px] sm:text-right lg:order-3 lg:text-base lg:leading-none">
             &copy; {currentYear} Alpha Zeta. All rights reserved
