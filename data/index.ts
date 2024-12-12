@@ -7,6 +7,16 @@ import PortfolioImage6 from '@/assets/media/Design And Construction Of Dams.jpg'
 import PortfolioImage7 from '@/assets/media/Supply of Fertilizer.jpg';
 import PortfolioImage8 from '@/assets/media/Construction and Civil Engineering.jpg';
 
+import { FiCheck, FiSmile, FiAward, FiCheckCircle } from 'react-icons/fi'
+
+import Timeline1 from '@/assets/media/timeline-1.jpg';
+import Timeline2 from '@/assets/media/timeline-2.jpg';
+import Timeline3 from '@/assets/media/timeline-3.jpg';
+
+import featured1 from '@/assets/media/featured-1.jpg';
+import featured2 from '@/assets/media/featured-2.jpg';
+import featured3 from '@/assets/media/featured-3.jpg';
+
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
 import AdamAbubakar from '@/assets/media/adma-abubakar.jpg';
@@ -45,6 +55,69 @@ const homepage = {
       path: '/contact',
     },
   ],
+  data_impact: {
+    title: "Our Impact",
+    description: "Discover the milestones we’ve achieved and the difference we’ve made so far.",
+    items: [
+      {
+        title: "Projects Completed",
+        value: "120+",
+        image: FiCheckCircle,
+      },
+      {
+        title: "Happy Clients",
+        value: "95%",
+        image: FiSmile,
+      },
+      {
+        title: "Awards Won",
+        value: "18",
+        image: FiAward,
+      },
+    ],
+  },  
+  data_projects: {
+    title: "Featured Projects",
+    description: "Explore some of our most impactful and visually stunning projects that showcase our expertise and creativity.",
+    items: [
+      {
+        title: "Modern Workspace",
+        description: "A state-of-the-art office design blending functionality with aesthetics.",
+        image: [featured1],
+      },
+      {
+        title: "Urban Living",
+        description: "Innovative apartment designs tailored for urban lifestyles.",
+        image: [featured2],
+      },
+      {
+        title: "Green Villa",
+        description: "A luxurious eco-friendly villa designed for sustainable living.",
+        image: [featured3],
+      },
+    ],
+  },
+  data_timeline: {
+    title: "Our Journey",
+    description: "A visual timeline of our growth, achievements, and milestones over the years.",
+    steps: [
+      {
+        title: "Founding Year",
+        description: "The beginning of our story, with a vision to make a difference.",
+        image: [Timeline1],
+      },
+      {
+        title: "Major Milestone",
+        description: "Achieving a breakthrough in delivering innovative solutions.",
+        image: [Timeline2],
+      },
+      {
+        title: "Present Day",
+        description: "Continuing to grow and innovate while serving our clients worldwide.",
+        image: [Timeline3],
+      },
+    ],
+  },
   hero: {
     title: 'Transforming Visions, Building Nigeria',
     description:
