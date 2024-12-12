@@ -16,17 +16,17 @@ const Footer: React.FC<FooterProps> = () => {
     {
       icon: <FiFacebook className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
       label: 'Facebook',
-      path: 'facebook.com',
+      path: 'https://facebook.com',
     },
     {
       icon: <FiX className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
       label: 'Twitter',
-      path: 'x.com',
+      path: 'https://x.com',
     },
     {
       icon: <FiInstagram className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
       label: 'Instagam',
-      path: 'instagram.com',
+      path: 'https://instagram.com',
     },
   ];
   return (

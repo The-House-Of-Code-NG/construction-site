@@ -2,6 +2,7 @@ import React from 'react';
 import { PageWrapper } from '@/components/PageWrapper';
 import AnimatedTitle from '@/components/AnimatedTitle';
 import homepage from '@/data';
+import Link from 'next/link';
 
 const ServicesPage: React.FC = () => {
   return (
@@ -33,11 +34,13 @@ const ServicesPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex lg:justify-end">
-                    <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
-                      <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
-                        Start project
-                      </span>
-                    </button>
+                    <Link href="/contact#start" target='#start'>
+                      <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
+                        <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
+                          Start project
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -69,11 +72,13 @@ const ServicesPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex lg:justify-end">
-                    <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
-                      <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
-                        Start project
-                      </span>
-                    </button>
+                  <Link href="/contact#start" target='#start'>
+                      <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
+                        <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
+                          Start project
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               ))}

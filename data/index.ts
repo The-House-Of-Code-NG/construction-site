@@ -1,6 +1,11 @@
 import PortfolioImage from '@/assets/media/portofolio.jpg';
 import PortfolioImage2 from '@/assets/media/portofolio-2.jpg';
 import PortfolioImage3 from '@/assets/media/portofolio-3.jpg';
+import PortfolioImage4 from '@/assets/media/Supply of Seeds.jpg';
+import PortfolioImage5 from '@/assets/media/Consultancy.jpg';
+import PortfolioImage6 from '@/assets/media/Design And Construction Of Dams.jpg';
+import PortfolioImage7 from '@/assets/media/Supply of Fertilizer.jpg';
+import PortfolioImage8 from '@/assets/media/Construction and Civil Engineering.jpg';
 
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
@@ -378,7 +383,7 @@ const homepage = {
         location: 'Maigatari, Jigawa State',
         color: generateRandomLightColor(),
         contractAmount: '₦21,482,985.00',
-        gallery: [PortfolioImage],
+        gallery: [PortfolioImage4],
         description:
           'A significant project to revitalize the Maigatari Export Processing Zone, improving infrastructure and boosting economic activities in the region.',
       },
@@ -390,7 +395,7 @@ const homepage = {
         location: 'Federal Government College Kano',
         color: generateRandomLightColor(),
         contractAmount: '₦6,442,360.00',
-        gallery: [PortfolioImage2],
+        gallery: [PortfolioImage5],
         description:
           'A focused educational infrastructure project aimed at enhancing learning environments for senior secondary school students in Kano.',
       },
@@ -401,7 +406,7 @@ const homepage = {
         location: 'Wudi I, Old Tamburawa, and Gari, Kano',
         color: generateRandomLightColor(),
         contractAmount: '₦223,176,048.62',
-        gallery: [PortfolioImage],
+        gallery: [PortfolioImage6],
         description:
           'An extensive regional project focused on improving critical water infrastructure and resource management in Kano.',
       },
@@ -411,7 +416,7 @@ const homepage = {
         location: 'Kano',
         color: generateRandomLightColor(),
         contractAmount: '₦200,162,055.00',
-        gallery: [PortfolioImage3],
+        gallery: [PortfolioImage7],
         description:
           'Strategic agricultural input supply project supporting local farming communities with high-quality NPK fertilizer to boost agricultural productivity.',
       },

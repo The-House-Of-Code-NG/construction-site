@@ -1,6 +1,25 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import HomePageBg2 from '@/assets/media/hero.jpg';
+import { FiFacebook, FiInstagram, FiX } from 'react-icons/fi';
+
+const social = [
+  {
+    icon: <FiFacebook className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
+    label: 'Facebook',
+    path: 'https://facebook.com',
+  },
+  {
+    icon: <FiX className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
+    label: 'Twitter',
+    path: 'https://x.com',
+  },
+  {
+    icon: <FiInstagram className="w-[14px] h-[14px] mr-2 lg:w-4 lg:h-4" />,
+    label: 'Instagam',
+    path: 'https://instagram.com',
+  },
+];
 
 const HomepageHero = ({ data }: { data: any }) => {
   return (
@@ -21,28 +40,25 @@ const HomepageHero = ({ data }: { data: any }) => {
                 </a>
               </Link>
               <ul className="flex items-center gap-3 mt-auto lg:gap-5">
-                {data.social &&
-                  data.social.map((item: any, index: number) => (
-                    <li key={index}>
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center"
-                      >
-                        {/* {item.icon && (
-                          <BCMSImage
-                            media={item.icon}
-                            svg
-                            className="w-4 h-4 mr-1.5"
-                          />
-                        )} */}
-                        <span className="text-xs leading-none tracking-[-0.41px] lg:text-base lg:leading-none">
-                          {item.label}
-                        </span>
-                      </a>
-                    </li>
-                  ))}
+              {social.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center px-4 py-[9px] border rounded-[32px] lg:py-3 ${
+                      item.icon
+                        ? 'text-appGray-500 border-appGray-200'
+                        : 'text-white border-appText bg-appText'
+                    }`}
+                  >
+                    {item.icon && <>{item.icon}</>}
+                    <span className="text-sm leading-none font-medium tracking-[-0.41px] uppercase lg:text-base lg:leading-none">
+                      {item.label}
+                    </span>
+                  </a>
+                </li>
+              ))}
               </ul>
             </div>
             <div className="absolute top-0 right-0 w-[244px] h-[244px] translate-x-1/2 -translate-y-1/2 bg-[#3A437E] bg-blend-overlay rounded-full opacity-50 blur-[100px]" />
