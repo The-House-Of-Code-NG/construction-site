@@ -3,13 +3,13 @@ import React from 'react';
 
 const HompageTimeline = ({ data }: { data?: any }) => {
   return (
-    
+
     <section className="pb-10 lg:pb-14">
       <div className="relative container">
         <div className="relative z-10 mb-8 md:flex md:items-start md:justify-between md:gap-16 lg:gap-20 lg:mb-10">
           <div className="flex items-center mb-[14px] md:mt-4">
-            <div className="w-1.5 h-1.5 bg-appText rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1" />
-            <h2 className="text-lg leading-none tracking-[-0.41px] font-Helvetica lg:text-[32px] lg:leading-none">
+            <div className="w-1.5 h-1.5 bg-alphaBlue rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1" />
+            <h2 className="text-lg text-alphaYellow leading-none tracking-[-0.41px] font-Helvetica lg:text-[32px] lg:leading-none">
               {data.title}
             </h2>
           </div>

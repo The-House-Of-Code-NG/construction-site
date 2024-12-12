@@ -7,8 +7,8 @@ const HompageImpact = ({ data }: { data?: any }) => {
         <div className="container">
             <div className="mb-5 md:flex md:items-start md:justify-between md:gap-16 md:mb-10 lg:gap-20">
             <div className="flex items-center mb-[14px] md:mt-4">
-                <div className="w-1.5 h-1.5 bg-appText rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1" />
-                <h2 className="text-lg leading-none tracking-[-0.41px] font-Helvetica lg:text-[32px] lg:leading-none">
+                <div className="w-1.5 h-1.5 bg-alphaBlue rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1" />
+                <h2 className="text-lg text-alphaYellow leading-none tracking-[-0.41px] font-Helvetica lg:text-[32px] lg:leading-none">
                 {data.title}
                 </h2>
             </div>
@@ -20,11 +20,11 @@ const HompageImpact = ({ data }: { data?: any }) => {
             {data.items.map((stat: any, index: number) => (
                 <div
                 key={index}
-                className="bg-[#F7F7F7] p-8 rounded-2xl text-center flex flex-col items-center"
+                className="bg-alphaYellow/10 p-8 rounded-2xl text-center flex flex-col items-center"
                 >
-                <stat.image className="w-16 h-16 mb-4" />
-                <h3 className="text-3xl font-bold text-appText mb-2">{stat.value}</h3>
-                <p className="text-sm text-appGray-300">{stat.title}</p>
+                <stat.image className="w-16 h-16 mb-4 text-alphaBlue" />
+                <h3 className="text-3xl font-bold text-alphaBlue mb-2">{stat.value}</h3>
+                <p className="text-sm text-alphaBlue">{stat.title}</p>
                 </div>
             ))}
             </div>

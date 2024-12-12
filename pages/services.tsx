@@ -12,7 +12,7 @@ const ServicesPage: React.FC = () => {
           <AnimatedTitle
             selector=".engineering_selector"
             title={homepage.engineering_services.title}
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="grid grid-cols-1 gap-10 lg:gap-[72px]">
@@ -50,7 +50,7 @@ const ServicesPage: React.FC = () => {
           <AnimatedTitle
             selector=".agricultural_selector"
             title={homepage.agricultural_services.title}
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="grid grid-cols-1 gap-10 lg:gap-[72px]">
