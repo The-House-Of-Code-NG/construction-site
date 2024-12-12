@@ -84,7 +84,10 @@ const ContactPage: React.FC = () => {
               isReadOnly={true}
               className="mb-8 md:mb-14 lg:mb-16"
             />
-            <div id='start' className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]">
+            <div
+              id="start"
+              className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]"
+            >
               To reach out to us, <br />
               please fill in the form below.
             </div>

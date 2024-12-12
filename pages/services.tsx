@@ -34,7 +34,7 @@ const ServicesPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex lg:justify-end">
-                    <Link href="/contact#start" target='#start'>
+                    <Link href="/contact#start" target="#start">
                       <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
                         <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
                           Start project
@@ -72,7 +72,7 @@ const ServicesPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex lg:justify-end">
-                  <Link href="/contact#start" target='#start'>
+                    <Link href="/contact#start" target="#start">
                       <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
                         <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
                           Start project

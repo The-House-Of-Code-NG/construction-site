@@ -58,7 +58,9 @@ const Header: React.FC<HeaderProps> = () => {
             ))}
           </ul>
           <div className="flex text-white items-center justify-end flex-1 leading-none font-medium tracking-[-0.41px] max-lg:hidden">
-          <Link href="/contact#start" target='#start'>Start A Project</Link>
+            <Link href="/contact#start" target="#start">
+              Start A Project
+            </Link>
             <div className="w-4 h-4 bg-alphaYellow rounded-full mx-2" />
             {/*<span>Naira worth of projects</span>*/}
           </div>
