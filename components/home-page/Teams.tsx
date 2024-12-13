@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
 import Image from 'next/image';
-import React from 'react';
 
 const HomepageTeam = ({ data }: { data?: any }) => {
+  // State for modal visibility and selected team member
+  const [selectedMember, setSelectedMember] = useState<any | null>(null);
+
   return (
     <section className="pb-10 lg:pb-14">
       <div className="container">
@@ -21,19 +24,24 @@ const HomepageTeam = ({ data }: { data?: any }) => {
             {data.items.map((item: any, index: number) => (
               <div
                 key={index}
-                className="bg-white shadow-md rounded-lg p-4 text-center"
-                // style={{ backgroundColor: item.color }}
+                className="bg-white shadow-md rounded-lg text-center"
               >
                 <Image
                   width={300}
                   height={300}
                   src={item.image}
-                  alt="Team Member"
-                  className=" rounded-lg mx-auto object-cover grayscale"
+                  alt={item.name}
+                  className="rounded-t-lg w-full mx-auto object-cover grayscale"
                 />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-500">{item.role}</p>
+                  <span
+                    className="font-bold text-base mt-3 cursor-pointer text-appText"
+                    onClick={() => setSelectedMember(item)} // Set selected member
+                  >
+                    View More
+                  </span>
                 </div>
               </div>
             ))}
@@ -48,6 +56,40 @@ const HomepageTeam = ({ data }: { data?: any }) => {
           View all members
         </a>
       </div>
+
+      {/* Modal */}
+      {selectedMember && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          onClick={() => setSelectedMember(null)} // Close modal on backdrop click
+        >
+          <div
+            className="bg-white rounded-lg p-6 max-w-lg w-full"
+            onClick={(e) => e.stopPropagation()} // Prevent modal content click from closing
+          >
+            <button
+              className="absolute top-4 right-4 text-gray-500 hover:text-black"
+              onClick={() => setSelectedMember(null)} // Close modal
+            >
+              ✕
+            </button>
+            <Image
+              width={300}
+              height={300}
+              src={selectedMember.image}
+              alt={selectedMember.name}
+              className="rounded-lg mx-auto mb-4 object-cover"
+            />
+            <h3 className="text-xl font-semibold text-center">
+              {selectedMember.name}
+            </h3>
+            <p className="text-sm text-gray-500 text-center mb-4">
+              {selectedMember.role}
+            </p>
+            <p className="text-gray-700 text-center">{selectedMember.description}</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
