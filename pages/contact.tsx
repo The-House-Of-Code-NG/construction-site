@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
         <div className="container">
           <AnimatedTitle
             title="Contact Us"
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <form className="md:grid md:grid-cols-2 md:gap-x-[72px]">
@@ -84,7 +84,10 @@ const ContactPage: React.FC = () => {
               isReadOnly={true}
               className="mb-8 md:mb-14 lg:mb-16"
             />
-            <div id='start' className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]">
+            <div
+              id="start"
+              className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]"
+            >
               To reach out to us, <br />
               please fill in the form below.
             </div>

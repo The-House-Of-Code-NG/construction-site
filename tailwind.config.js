@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        alphaBlue: "#052162",
+        alphaYellow: "#e0b417",
         appAccent: '#EF4141',
         appBody: '#fff',
         appText: '#171717',

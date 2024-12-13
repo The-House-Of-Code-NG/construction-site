@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = () => {
   };
 
   return (
-    <header className="relative z-50">
+    <header className="relative z-50 bg-alphaBlue pb-4">
       <div
         className="relative z-10 container"
         onClick={handleContainerClick}
@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = () => {
               'flex flex-col gap-8 transition-colors duration-300 max-md:absolute max-md:left-0 max-md:-bottom-8 max-md:translate-y-full max-md:w-full md:flex-row md:flex-1 md:justify-center lg:gap-10',
               {
                 'flex flex-col text-white md:text-appGray-500': showMobileMenu,
-                'text-appGray-500 max-md:hidden': !showMobileMenu,
+                'text-white max-md:hidden': !showMobileMenu,
               },
             )}
           >
@@ -57,9 +57,11 @@ const Header: React.FC<HeaderProps> = () => {
               </li>
             ))}
           </ul>
-          <div className="flex items-center justify-end flex-1 leading-none font-medium tracking-[-0.41px] max-lg:hidden">
-          <Link href="/contact#start" target='#start'>Start A Project</Link>
-            <div className="w-4 h-4 bg-appAccent rounded-full mx-2" />
+          <div className="flex text-white items-center justify-end flex-1 leading-none font-medium tracking-[-0.41px] max-lg:hidden">
+            <Link href="/contact#start" target="#start">
+              Start A Project
+            </Link>
+            <div className="w-4 h-4 bg-alphaYellow rounded-full mx-2" />
             {/*<span>Naira worth of projects</span>*/}
           </div>
           <button

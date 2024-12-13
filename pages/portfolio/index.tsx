@@ -12,7 +12,7 @@ const PortfolioPage = () => {
         <div className="container">
           <AnimatedTitle
             title={homepage.portfolio.title}
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="grid grid-cols-1 gap-[50px] lg:gap-20">

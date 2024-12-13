@@ -12,7 +12,7 @@ const ServicesPage: React.FC = () => {
           <AnimatedTitle
             selector=".engineering_selector"
             title={homepage.engineering_services.title}
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="grid grid-cols-1 gap-10 lg:gap-[72px]">
@@ -34,7 +34,7 @@ const ServicesPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex lg:justify-end">
-                    <Link href="/contact#start" target='#start'>
+                    <Link href="/contact#start" target="#start">
                       <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
                         <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
                           Start project
@@ -50,7 +50,7 @@ const ServicesPage: React.FC = () => {
           <AnimatedTitle
             selector=".agricultural_selector"
             title={homepage.agricultural_services.title}
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="grid grid-cols-1 gap-10 lg:gap-[72px]">
@@ -72,7 +72,7 @@ const ServicesPage: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex lg:justify-end">
-                  <Link href="/contact#start" target='#start'>
+                    <Link href="/contact#start" target="#start">
                       <button className="flex justify-center items-center w-full px-6 py-[13px] border border-appGray-200 rounded-[32px] text-appGray-500 transition-colors duration-300 hover:border-appText hover:bg-appText hover:text-white lg:px-10 lg:py-5 lg:w-auto">
                         <span className="text-sm leading-none tracking-[-0.41px] font-medium lg:text-2xl lg:leading-none">
                           Start project
