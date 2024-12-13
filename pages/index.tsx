@@ -8,6 +8,7 @@ import HomepageServices from '@/components/home-page/Services';
 import HomepagePortfolio from '@/components/home-page/Portfolio';
 import HomepageTeam from '@/components/home-page/Teams';
 import HompageImpact from '@/components/home-page/Impact';
+import MasonryGallery from '@/components/home-page/Gallery';
 
 const Home: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
       <HompageImpact data={homepage.data_impact} />
       <HomepageTeam data={homepage.team} />
       <HomepagePortfolio data={homepage.portfolio} />
+      <MasonryGallery data={homepage.gallery} />
     </PageWrapper>
   );
 };

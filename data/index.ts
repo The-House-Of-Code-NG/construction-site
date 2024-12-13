@@ -16,11 +16,50 @@ import featured1 from '@/assets/media/featured-1.jpg';
 import featured2 from '@/assets/media/featured-2.jpg';
 import featured3 from '@/assets/media/featured-3.jpg';
 
+import gallery1 from '@/assets/media/PHOTO-2024-12-13-16-21-35.jpg';
+import gallery2 from '@/assets/media/PHOTO-2024-12-13-16-21-36 2.jpg';
+import gallery3 from '@/assets/media/PHOTO-2024-12-13-16-21-36 3.jpg';
+import gallery4 from '@/assets/media/PHOTO-2024-12-13-16-21-36 4.jpg';
+import gallery5 from '@/assets/media/PHOTO-2024-12-13-16-21-36.jpg';
+import gallery6 from '@/assets/media/PHOTO-2024-12-13-16-21-37 2.jpg';
+import gallery7 from '@/assets/media/PHOTO-2024-12-13-16-21-37 3.jpg';
+import gallery8 from '@/assets/media/PHOTO-2024-12-13-16-21-37 4.jpg';
+import gallery9 from '@/assets/media/PHOTO-2024-12-13-16-21-37.jpg';
+import gallery10 from '@/assets/media/PHOTO-2024-12-13-16-21-38 2.jpg';
+import gallery11 from '@/assets/media/PHOTO-2024-12-13-16-21-38.jpg';
+import gallery12 from '@/assets/media/PHOTO-2024-12-13-16-21-56 2.jpg';
+import gallery13 from '@/assets/media/PHOTO-2024-12-13-16-21-56 3.jpg';
+import gallery14 from '@/assets/media/PHOTO-2024-12-13-16-21-56.jpg';
+import gallery15 from '@/assets/media/PHOTO-2024-12-13-16-21-57 2.jpg';
+import gallery16 from '@/assets/media/PHOTO-2024-12-13-16-21-57 3.jpg';
+import gallery17 from '@/assets/media/PHOTO-2024-12-13-16-21-57 4.jpg';
+import gallery18 from '@/assets/media/PHOTO-2024-12-13-16-21-57 5.jpg';
+import gallery19 from '@/assets/media/PHOTO-2024-12-13-16-21-57.jpg';
+import gallery20 from '@/assets/media/PHOTO-2024-12-13-16-21-58 2.jpg';
+import gallery21 from '@/assets/media/PHOTO-2024-12-13-16-21-58 3.jpg';
+import gallery22 from '@/assets/media/PHOTO-2024-12-13-16-21-58 4.jpg';
+import gallery23 from '@/assets/media/PHOTO-2024-12-13-16-21-58.jpg';
+import gallery24 from '@/assets/media/PHOTO-2024-12-13-16-21-59 2.jpg';
+import gallery25 from '@/assets/media/PHOTO-2024-12-13-16-21-59 3.jpg';
+import gallery26 from '@/assets/media/PHOTO-2024-12-13-16-21-59 4.jpg';
+import gallery27 from '@/assets/media/PHOTO-2024-12-13-16-21-59.jpg';
+import gallery28 from '@/assets/media/PHOTO-2024-12-13-16-22-00 2.jpg';
+import gallery29 from '@/assets/media//PHOTO-2024-12-13-16-22-00 3.jpg';
+import gallery31 from '@/assets/media//PHOTO-2024-12-13-16-22-00.jpg';
+import gallery32 from '@/assets/media//PHOTO-2024-12-13-16-22-01 2.jpg';
+import gallery33 from '@/assets/media//PHOTO-2024-12-13-16-22-01 3.jpg';
+import gallery34 from '@/assets/media//PHOTO-2024-12-13-16-22-01 4.jpg';
+import gallery35 from '@/assets/media//PHOTO-2024-12-13-16-22-01 5.jpg';
+import gallery36 from '@/assets/media//PHOTO-2024-12-13-16-22-01.jpg';
+import gallery37 from '@/assets/media//PHOTO-2024-12-13-16-22-02 2.jpg';
+import gallery38 from '@/assets/media//PHOTO-2024-12-13-16-22-02.jpg';
+
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
 import AdamAbubakar from '@/assets/media/adma-abubakar.jpg';
 import BashirAbubakar from '@/assets/media/bashir-abubakar.jpg';
 import UmarSaid from '@/assets/media/umar-said.jpg';
+import { title } from 'process';
 function generateRandomLightColor() {
   const r = Math.floor(Math.random() * 56) + 200;
   const g = Math.floor(Math.random() * 56) + 200;
@@ -54,6 +93,160 @@ const homepage = {
       path: '/contact',
     },
   ],
+  gallery: {
+    title: "Our Gallery",
+    descripton: "Have fun exploring our memories and years of dedicated seervices",
+    galleryItems: [
+      {
+        title: "Project Image 1",
+        image: [gallery1]
+      },
+      {
+        title: "Project Image 2",
+        image: [gallery2]
+      },
+      {
+        title: "Project Image 3",
+        image: [gallery3]
+      },
+      {
+        title: "Project Image 4",
+        image: [gallery4]
+      },
+      {
+        title: "Project Image 5",
+        image: [gallery5]
+      },
+      {
+        title: "Project Image 6",
+        image: [gallery6]
+      },
+      {
+        title: "Project Image 7",
+        image: [gallery7]
+      },
+      {
+        title: "Project Image 8",
+        image: [gallery8]
+      },
+      {
+        title: "Project Image 9",
+        image: [gallery9]
+      },
+      {
+        title: "Project Image 10",
+        image: [gallery10]
+      },
+      {
+        title: "Project Image 11",
+        image: [gallery11]
+      },
+      {
+        title: "Project Image 12",
+        image: [gallery12]
+      },
+      {
+        title: "Project Image 13",
+        image: [gallery13]
+      },
+      {
+        title: "Project Image 14",
+        image: [gallery14]
+      },
+      {
+        title: "Project Image 15",
+        image: [gallery15]
+      },
+      {
+        title: "Project Image 16",
+        image: [gallery16]
+      },
+      {
+        title: "Project Image 17",
+        image: [gallery17]
+      },
+      {
+        title: "Project Image 18",
+        image: [gallery18]
+      },
+      {
+        title: "Project Image 19",
+        image: [gallery19]
+      },
+      {
+        title: "Project Image 20",
+        image: [gallery20]
+      },
+      {
+        title: "Project Image 21",
+        image: [gallery21]
+      },
+      {
+        title: "Project Image 22",
+        image: [gallery22]
+      },
+      {
+        title: "Project Image 23",
+        image: [gallery23]
+      },
+      {
+        title: "Project Image 24",
+        image: [gallery24]
+      },
+      {
+        title: "Project Image 25",
+        image: [gallery25]
+      },
+      {
+        title: "Project Image 26",
+        image: [gallery26]
+      },
+      {
+        title: "Project Image 27",
+        image: [gallery27]
+      },
+      {
+        title: "Project Image 28",
+        image: [gallery28]
+      },
+      {
+        title: "Project Image 29",
+        image: [gallery29]
+      },
+      {
+        title: "Project Image 30",
+        image: [gallery32]
+      },
+      {
+        title: "Project Image 31",
+        image: [gallery31]
+      },
+      {
+        title: "Project Image 33",
+        image: [gallery33]
+      },
+      {
+        title: "Project Image 34",
+        image: [gallery34]
+      },
+      {
+        title: "Project Image 35",
+        image: [gallery35]
+      },
+      {
+        title: "Project Image 36",
+        image: [gallery36]
+      },
+      {
+        title: "Project Image 37",
+        image: [gallery37]
+      },
+      {
+        title: "Project Image 38",
+        image: [gallery38]
+      }
+    ]
+  },
   data_impact: {
     title: 'Our Impact',
     description:
