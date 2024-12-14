@@ -54,6 +54,14 @@ import gallery36 from '@/assets/media//PHOTO-2024-12-13-16-22-01.jpg';
 import gallery37 from '@/assets/media//PHOTO-2024-12-13-16-22-02 2.jpg';
 import gallery38 from '@/assets/media//PHOTO-2024-12-13-16-22-02.jpg';
 
+import gallery39 from '@/assets/media/PHOTO-2024-12-13-19-07-51 2.jpg';
+import gallery40 from '@/assets/media/PHOTO-2024-12-13-19-07-51.jpg';
+import gallery41 from '@/assets/media/PHOTO-2024-12-13-19-07-52.jpg';
+import gallery42 from '@/assets/media/PHOTO-2024-12-13-19-07-53 2.jpg';
+import gallery43 from '@/assets/media/PHOTO-2024-12-13-19-07-53 3.jpg';
+import gallery44 from '@/assets/media/PHOTO-2024-12-13-19-07-53.jpg';
+
+
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
 import AdamAbubakar from '@/assets/media/adma-abubakar.jpg';
@@ -244,7 +252,31 @@ const homepage = {
       {
         title: "Project Image 38",
         image: [gallery38]
-      }
+      },
+      {
+        title: "Project Image 39",
+        image: [gallery39]
+      },
+      {
+        title: "Project Image 40",
+        image: [gallery40]
+      },
+      {
+        title: "Project Image 41",
+        image: [gallery41]
+      },
+      {
+        title: "Project Image 42",
+        image: [gallery42]
+      },
+      {
+        title: "Project Image 43",
+        image: [gallery43]
+      },
+      {
+        title: "Project Image 44",
+        image: [gallery44]
+      },
     ]
   },
   data_impact: {
