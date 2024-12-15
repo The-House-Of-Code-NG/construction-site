@@ -94,7 +94,7 @@ const HomepageHero = ({ data }: { data: any }) => {
         </picture>
         <div className="absolute z-50 shadow-2xl p-2 top-1/3  left-1/2 transform -translate-x-1/2 -translate-y-1/3 text-center">
           <h1 className="w-full text-alphaYellow text-center leading-[1.2] tracking-[-0.41px] mb-2.5 lg:text-[70px] lg:leading-[1.2] lg:mb-4">
-            Our Mission is to construct a better feature
+            Our Mission is to construct a better future
           </h1>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-full bg-black/30" />

@@ -67,6 +67,8 @@ import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
 import AdamAbubakar from '@/assets/media/adma-abubakar.jpg';
 import BashirAbubakar from '@/assets/media/bashir-abubakar.jpg';
 import UmarSaid from '@/assets/media/umar-said.jpg';
+import AuwalEng from '@/assets/media/auwal.jpg';
+import AliyuSurveyor from '@/assets/media/aliyu.jpg';
 import { title } from 'process';
 function generateRandomLightColor() {
   const r = Math.floor(Math.random() * 56) + 200;
@@ -89,6 +91,10 @@ const homepage = {
       path: '/services',
     },
     {
+      label: 'Gallery',
+      path: '/gallery',
+    },
+    {
       label: 'Portfolio',
       path: '/portfolio',
     },
@@ -103,150 +109,150 @@ const homepage = {
   ],
   gallery: {
     title: "Our Gallery",
-    descripton: "Have fun exploring our memories and years of dedicated seervices",
+    description: "Have fun exploring our memories and years of dedicated services",
     galleryItems: [
       {
-        title: "Project Image 1",
+        title: "Sokoto road estate",
         image: [gallery1]
       },
       {
-        title: "Project Image 2",
+        title: "Sokoto road estate 2",
         image: [gallery2]
       },
       {
-        title: "Project Image 3",
+        title: "Sokoto road estate 3",
         image: [gallery3]
       },
       {
-        title: "Project Image 4",
+        title: "Sokoto road estate 4",
         image: [gallery4]
       },
       {
-        title: "Project Image 5",
+        title: "Sokoto road estate 5",
         image: [gallery5]
       },
       {
-        title: "Project Image 6",
+        title: "Sokoto road estate 6",
         image: [gallery6]
       },
       {
-        title: "Project Image 7",
+        title: "Sokoto road estate 7",
         image: [gallery7]
       },
       {
-        title: "Project Image 8",
+        title: "Sokoto road estate 8",
         image: [gallery8]
       },
       {
-        title: "Project Image 9",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery9]
       },
       {
-        title: "Project Image 10",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery10]
       },
       {
-        title: "Project Image 11",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery11]
       },
       {
-        title: "Project Image 12",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery12]
       },
       {
-        title: "Project Image 13",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery13]
       },
       {
-        title: "Project Image 14",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery14]
       },
       {
-        title: "Project Image 15",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery15]
       },
       {
-        title: "Project Image 16",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery16]
       },
       {
-        title: "Project Image 17",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery17]
       },
       {
-        title: "Project Image 18",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery18]
       },
       {
-        title: "Project Image 19",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery19]
       },
       {
-        title: "Project Image 20",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery20]
       },
       {
-        title: "Project Image 21",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery21]
       },
       {
-        title: "Project Image 22",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery22]
       },
       {
-        title: "Project Image 23",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery23]
       },
       {
-        title: "Project Image 24",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery24]
       },
       {
-        title: "Project Image 25",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery25]
       },
       {
-        title: "Project Image 26",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery26]
       },
       {
-        title: "Project Image 27",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery27]
       },
       {
-        title: "Project Image 28",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery28]
       },
       {
-        title: "Project Image 29",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery29]
       },
       {
-        title: "Project Image 30",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery32]
       },
       {
-        title: "Project Image 31",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery31]
       },
       {
-        title: "Project Image 33",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery33]
       },
       {
-        title: "Project Image 34",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery34]
       },
       {
-        title: "Project Image 35",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery35]
       },
       {
-        title: "Project Image 36",
+        title: "Construction of Poultry House at Kuje for Federal Ministry of Agriculture",
         image: [gallery36]
       },
       {
-        title: "Project Image 37",
+        title: "Construction of Irrigation channels at Watari Dam",
         image: [gallery37]
       },
       {
@@ -254,27 +260,27 @@ const homepage = {
         image: [gallery38]
       },
       {
-        title: "Project Image 39",
+        title: "Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 39",
         image: [gallery39]
       },
       {
-        title: "Project Image 40",
+        title: "Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 40",
         image: [gallery40]
       },
       {
-        title: "Project Image 41",
+        title: "Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 41",
         image: [gallery41]
       },
       {
-        title: "Project Image 42",
+        title: "Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 42",
         image: [gallery42]
       },
       {
-        title: "Project Image 43",
+        title: "Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 43",
         image: [gallery43]
       },
       {
-        title: "Project Image 44",
+        title: "Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44",
         image: [gallery44]
       },
     ]
@@ -359,14 +365,17 @@ const homepage = {
       {
         icon: '/facebook.svg',
         label: 'Facebook',
+        path: "https://www.facebook.com/share/1A3WLN9FhP/?mibextid=LQQJ4d"
       },
       {
         icon: '/twitter.svg',
         label: 'Twitter',
+        path: "https://x.com/alphazetaglobal"
       },
       {
         icon: '/instagram.svg',
         label: 'Instagam',
+        path: "https://www.facebook.com/share/1A3WLN9FhP/?mibextid=LQQJ4d"
       },
     ],
   },
@@ -398,6 +407,7 @@ const homepage = {
         name: 'Bashir Aliu Abubakar MBA, PMP',
         role: 'Managing Director',
         color: generateRandomLightColor(),
+        description: "Bashir Aliu Abubakar is a dedicated professional with extensive experience in organizational development and project management. His background in Information Technology and an MBA, along with his over 15years of work for International Development Organizations such as UNICEF and Save The Children International, showcases his commitment to excellence, enduring change and positive impact.",
 
         image: BashirAbubakar,
       },
@@ -407,6 +417,21 @@ const homepage = {
         color: generateRandomLightColor(),
         image: UmarSaid,
       },
+
+      {
+        role: "Surveyor",
+        image: AliyuSurveyor,
+        color: generateRandomLightColor(),
+        name: "Rilwan Aliyu",
+        description: "Highly experienced surveyor with Fourteen years of experience in land surveying, mapping, and geospatial technologies. Skilled in topographic surveys, boundary surveys, GPS, and survey software."
+      },
+      {
+        role: "Engineer",
+        image: AuwalEng,
+        color: generateRandomLightColor(),
+        name: "Engr. Awwal Shuaibu Musa",
+        description: " Engr. Awwal Shuaibu Musa is A Professional Engineer with fourteen (14) years of experience in designs and Construction of Civil Engineering related infrastructures such as Roads, Bridges, Dams and Irrigation Schemes, Water supply, Buildings, flood and Erosion control. Specializing in the Design and Construction of various kind of Irrigation systems such as canal Irrigation, Drip and sprinkler Systems."
+      }
     ],
   },
   services: {

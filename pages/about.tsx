@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
         <div className="container mb-10 lg:mb-[128px] xl:pr-[220px]">
           <AnimatedTitle
             title={homepage.about.title}
-            className="mb-10 md:mb-20 lg:mb-[192px]"
+            className="mb-10 text-alphaYellow md:mb-20 lg:mb-[192px]"
             titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
           />
           <div className="mb-8 lg:flex lg:items-start lg:gap-[98px] lg:mb-14">
