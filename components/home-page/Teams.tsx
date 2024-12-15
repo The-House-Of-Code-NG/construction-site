@@ -37,12 +37,12 @@ const HomepageTeam = ({ data }: { data?: any }) => {
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-500">{item.role}</p>
                   {item?.description && (
-                      <span
-                          className="font-bold text-base mt-3 cursor-pointer text-appText"
-                          onClick={() => setSelectedMember(item)} // Set selected member
-                      >
-                    View More
-                  </span>
+                    <span
+                      className="font-bold text-base mt-3 cursor-pointer text-appText"
+                      onClick={() => setSelectedMember(item)} // Set selected member
+                    >
+                      View More
+                    </span>
                   )}
                 </div>
               </div>
@@ -77,9 +77,9 @@ const HomepageTeam = ({ data }: { data?: any }) => {
             </button>
             <div className="h-[300px] overflow-hidden mb-5">
               <Image
-                  src={selectedMember.image}
-                  alt={selectedMember.name}
-                  className="rounded-lg h-[100px] object-top mx-auto mb-4 object-contain"
+                src={selectedMember.image}
+                alt={selectedMember.name}
+                className="rounded-lg h-[100px] object-top mx-auto mb-4 object-contain"
               />
             </div>
             <h3 className="text-xl font-semibold text-center">
@@ -88,7 +88,9 @@ const HomepageTeam = ({ data }: { data?: any }) => {
             <p className="text-sm text-gray-500 text-center mb-4">
               {selectedMember.role}
             </p>
-            <p className="text-gray-700 text-center">{selectedMember.description}</p>
+            <p className="text-gray-700 text-center">
+              {selectedMember.description}
+            </p>
           </div>
         </div>
       )}

@@ -8,7 +8,7 @@ const MasonryGallery = ({ data }: { data: any }) => {
   return (
     <section className="py-10">
       <div className="container">
-      <div className="mb-8 md:flex md:items-start md:justify-between md:gap-16 lg:gap-20 lg:mb-10">
+        <div className="mb-8 md:flex md:items-start md:justify-between md:gap-16 lg:gap-20 lg:mb-10">
           <div className="flex items-center mb-[.875rem] md:mt-4">
             <div className="w-1.5 h-1.5 bg-appText rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1" />
             <h2 className="text-lg leading-none tracking-[-0.0256rem] font-Helvetica lg:text-[2rem] lg:leading-none">
@@ -25,14 +25,10 @@ const MasonryGallery = ({ data }: { data: any }) => {
         {/* Masonry Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[repeat(2,1fr)]">
           {data.galleryItems.slice(0, 6).map((item: any, index: number) => (
-              <div
-                key={index}
-                className={classNames(
-                  'relative group h-[25rem] w-full',
-                  
-                )}
-                
-              >
+            <div
+              key={index}
+              className={classNames('relative group h-[25rem] w-full')}
+            >
               {/* Image */}
               <Image
                 src={item.image[0]}
@@ -88,7 +84,6 @@ const MasonryGallery = ({ data }: { data: any }) => {
             <h3 className="text-lg font-bold text-center mb-2">
               {selectedImage.title}
             </h3>
-      
           </div>
         </div>
       )}
