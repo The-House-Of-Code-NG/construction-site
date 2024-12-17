@@ -13,7 +13,7 @@ const PortfolioPage = () => {
           <AnimatedTitle
             title={homepage.portfolio.title}
             className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
-            titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
+            titleClassName="text-[57px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[95px] md:text-[110px] lg:text-[150px] lg:tracking-[5.59px] xl:text-[132px]"
           />
           <div className="grid grid-cols-1 gap-[50px] lg:gap-20">
             {homepage.portfolio.items.map((item, index) => (
@@ -28,14 +28,14 @@ const PortfolioPage = () => {
                 <div>
                   <div className="lg:flex lg:items-start my-10 lg:justify-between">
                     <div>
-                      <h3 className="flex text-sm leading-none max-w-[80%] tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
+                      <h3 className="flex text-sm leading-none max-w-[80%] tracking-[-0.41px] text-alphaYellow font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
                         {item.title}
                       </h3>
                       <p className="text-normal leading-[1.4] tracking-[-0.41px]  lg:text-[15px] lg:max-w-[551px]">
                         {item.client}
                       </p>
                     </div>
-                    <p className="flex text-sm leading-none tracking-[-0.41px] font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
+                    <p className="flex text-sm leading-none tracking-[-0.41px] text-alphaYellow font-Helvetica mb-3 md:text-2xl md:leading-none lg:text-[32px]">
                       {item.contractAmount}
                     </p>
                   </div>

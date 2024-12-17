@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = () => {
             {homepage.headerLinks.map((item, index) => (
               <li className="cursor-pointer" key={index}>
                 <Link href={item.path}>
-                  <p className="text-sm leading-none font-medium tracking-[-0.41px] md:text-base md:leading-none transition-colors duration-300 md:hover:text-appText">
+                  <p className="text-sm leading-none font-medium tracking-[-0.41px] md:text-base md:leading-none transition-colors duration-300 md:hover:text-alphaYellow">
                     {item.label}
                   </p>
                 </Link>

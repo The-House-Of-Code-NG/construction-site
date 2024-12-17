@@ -37,9 +37,9 @@ const MasonryGallery = ({ data }: { data: any }) => {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-blue-900 bg-opacity-80 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 rounded-lg">
+              <div className="absolute inset-0 bg-alphaYellow bg-opacity-80 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity duration-300 rounded-lg">
                 <button
-                  className="bg-white text-blue-900 font-semibold px-4 py-2 rounded-md"
+                  className="bg-white text-alphaYbg-alphaYellow font-semibold px-4 py-2 rounded-md"
                   onClick={() => setSelectedImage(item)}
                 >
                   Expand
@@ -51,7 +51,7 @@ const MasonryGallery = ({ data }: { data: any }) => {
         <div className="flex flex-row justify-center my-10">
           <a
             href="/gallery"
-            className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
+            className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-alphaYellow bg-alphaYellow max-w-max lg:px-7 lg:py-3"
           >
             View all photos
           </a>

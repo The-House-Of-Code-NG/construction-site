@@ -49,7 +49,7 @@ const HomepageHero = ({ data }: { data: any }) => {
                       rel="noopener noreferrer"
                       className={`flex items-center justify-center px-4 py-[9px] border rounded-[32px] lg:py-3 ${
                         item.icon
-                          ? 'text-appGray-500 border-appGray-200'
+                          ? 'text-appGray-500 border-alphaYellow'
                           : 'text-white border-appText bg-appText'
                       }`}
                     >

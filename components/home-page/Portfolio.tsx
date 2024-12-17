@@ -21,7 +21,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
         <div className="mb-8 md:flex md:items-start md:justify-between md:gap-16 lg:gap-20 lg:mb-10">
           <div className="flex items-center mb-[14px] md:mt-4">
             <div className="w-1.5 h-1.5 bg-appText rounded-full mr-2 lg:w-2.5 lg:h-2.5 lg:mr-4 lg:mt-1" />
-            <h2 className="text-lg leading-none tracking-[-0.41px] font-Helvetica lg:text-[32px] lg:leading-none">
+            <h2 className="text-lg text-alphaYellow leading-none tracking-[-0.41px] font-Helvetica lg:text-[32px] text-alphaYellowlg:leading-none">
               {data.title}
             </h2>
           </div>
@@ -48,7 +48,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                   <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
                     {item.title}
                   </h3>
-                  <h3 className="leading-none tracking-[-0.41px] text-black mb-5 lg:text-xl lg:leading-none lg:mb-6">
+                  <h3 className="leading-none tracking-[-0.41px] mb-5 lg:text-xl lg:leading-none lg:mb-6 text-alphaYellow">
                     {item?.contractAmount}
                   </h3>
                 </div>
@@ -93,7 +93,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
                           'radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0) 0%, #FFFFFF 100%)',
                       }}
                     >
-                      <div className="px-6 py-4 bg-appText rounded-[32px] leading-none font-medium tracking-[-0.41px] text-white">
+                      <div className="px-6 py-4 bg-alphaYellow rounded-[32px] leading-none font-medium tracking-[-0.41px] text-white">
                         Open project
                       </div>
                     </div>
@@ -110,7 +110,7 @@ const HomepagePortfolio = ({ data }: { data: any }) => {
         <div className="flex flex-row justify-center my-10">
           <a
             href="/portfolio"
-            className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
+            className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-alphaYellow bg-alphaYellow max-w-max lg:px-7 lg:py-3"
           >
             View all projects
           </a>

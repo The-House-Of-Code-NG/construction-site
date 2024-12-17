@@ -11,12 +11,12 @@ const AboutPage: React.FC = () => {
           <AnimatedTitle
             title={homepage.about.title}
             className="mb-10 text-alphaYellow md:mb-20 lg:mb-[192px]"
-            titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
+            titleClassName="text-[57px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[95px] md:text-[110px] lg:text-[150px] lg:tracking-[5.59px] xl:text-[132px]"
           />
           <div className="mb-8 lg:flex lg:items-start lg:gap-[98px] lg:mb-14">
             <div className="flex items-center mb-[14px] flex-shrink-0 lg:w-[200px]">
               <div className="w-1.5 h-1.5 flex-shrink-0 bg-appText rounded-full mr-2 lg:w-2 lg:h-2 lg:mr-4" />
-              <div className="text-lg leading-none font-Helvetica tracking-[-0.41px] lg:text-[32px]">
+              <div className="text-lg text-alphaYellow leading-none font-Helvetica tracking-[-0.41px] lg:text-[32px]">
                 {homepage.about.title}
               </div>
             </div>
@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
                 {homepage.about.categories.map((category, index) => (
                   <div
                     key={index}
-                    className="flex text-sm leading-none tracking-[-0.41px] text-appGray-500 font-medium px-4 py-3 border border-appGray-200 rounded-[32px] lg:text-base lg:leading-none"
+                    className="flex text-sm leading-none tracking-[-0.41px] text-appGray-500 font-medium px-4 py-3 border border-alphaYellow rounded-[32px] lg:text-base lg:leading-none"
                   >
                     {category}
                   </div>

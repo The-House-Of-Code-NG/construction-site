@@ -2,6 +2,8 @@ import { PageWrapper } from '@/components/PageWrapper';
 import AnimatedTitle from '@/components/AnimatedTitle';
 import FormText from '@/components/form/Text';
 import { useRef, useState } from 'react';
+import Image from 'next/image';
+import mapImg from "@/assets/media/map.png"
 
 interface ContactForm {
   phone: string;
@@ -67,9 +69,9 @@ const ContactPage: React.FC = () => {
           <AnimatedTitle
             title="Contact Us"
             className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow"
-            titleClassName="text-[114px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[190px] md:text-[220px] lg:text-[300px] lg:tracking-[5.59px] xl:text-[464px]"
+            titleClassName="text-[57px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[95px] md:text-[110px] lg:text-[150px] lg:tracking-[5.59px] xl:text-[132px]"
           />
-          <form className="md:grid md:grid-cols-2 md:gap-x-[72px]">
+          <form className="md:grid md:grid-cols-2 md:gap-x-[72px] mb-10">
             <FormText
               value={me.current.phone}
               label="Phone number"
@@ -86,7 +88,7 @@ const ContactPage: React.FC = () => {
             />
             <div
               id="start"
-              className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]"
+              className="text-lg text-alphaYellow leading-[1.2] tracking-[-0.41px] font-Helvetica mb-8 md:col-span-2 md:text-2xl md:mb-10 lg:text-[40px] lg:leading-[1.2]"
             >
               To reach out to us, <br />
               please fill in the form below.
@@ -118,12 +120,13 @@ const ContactPage: React.FC = () => {
             />
             <button
               type="button"
-              className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white border-appText bg-appText max-w-max lg:px-7 lg:py-3"
+              className="flex items-center justify-center px-4 py-[9px] border rounded-[32px] text-white bg-alphaYellow max-w-max lg:px-7 lg:py-3"
               onClick={() => handleFormSubmit()}
             >
               <span>Submit</span>
             </button>
           </form>
+          <Image src={mapImg} className="h-[70vh] w-full" />
         </div>
       </div>
     </PageWrapper>

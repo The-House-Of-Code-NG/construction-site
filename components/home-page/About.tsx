@@ -34,7 +34,7 @@ const HomepageAbout = ({ data }: { data: any }) => {
                 ))}
                 {visibleCategory.length < data.categories.length && (
                   <button
-                    className="flex px-4 py-3 text-sm leading-none tracking-[-0.41px] text-white bg-appGray-600 font-medium rounded-[32px] lg:text-base lg:leading-none"
+                    className="flex px-4 py-3 text-sm leading-none tracking-[-0.41px] text-white bg-alphaYellow font-medium rounded-[32px] lg:text-base lg:leading-none"
                     onClick={() => setCategoriesToShow(999)}
                   >
                     See all
