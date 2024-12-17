@@ -38,7 +38,7 @@ const FormText: React.FC<FormTextProps> = ({
       {label && (
         <div
           className={classNames(
-            'text-sm leading-none tracking-[-0.41px] pb-3 border-b border-[#D9D9D9] transition-colors duration-300 lg:text-base lg:leading-none lg:pb-4',
+            'text-sm leading-none tracking-[-0.41px] text-alphaYellow pb-3 border-b border-[#D9D9D9] transition-colors duration-300 lg:text-base lg:leading-none lg:pb-4',
             { 'text-red-500': error },
           )}
         >
