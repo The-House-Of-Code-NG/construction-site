@@ -53,13 +53,34 @@ import gallery35 from '@/assets/media//PHOTO-2024-12-13-16-22-01 5.jpg';
 import gallery36 from '@/assets/media//PHOTO-2024-12-13-16-22-01.jpg';
 import gallery37 from '@/assets/media//PHOTO-2024-12-13-16-22-02 2.jpg';
 import gallery38 from '@/assets/media//PHOTO-2024-12-13-16-22-02.jpg';
-
 import gallery39 from '@/assets/media/PHOTO-2024-12-13-19-07-51 2.jpg';
 import gallery40 from '@/assets/media/PHOTO-2024-12-13-19-07-51.jpg';
 import gallery41 from '@/assets/media/PHOTO-2024-12-13-19-07-52.jpg';
 import gallery42 from '@/assets/media/PHOTO-2024-12-13-19-07-53 2.jpg';
 import gallery43 from '@/assets/media/PHOTO-2024-12-13-19-07-53 3.jpg';
 import gallery44 from '@/assets/media/PHOTO-2024-12-13-19-07-53.jpg';
+
+import gallery45 from '@/assets/media/PHOTO-2024-12-19-17-15-45.jpg';
+import gallery46 from '@/assets/media/PHOTO-2024-12-19-17-15-45_1.jpg';
+import gallery47 from '@/assets/media//PHOTO-2024-12-19-17-15-45_2.jpg';
+import gallery48 from '@/assets/media//PHOTO-2024-12-19-17-15-47.jpg';
+import gallery49 from '@/assets/media//PHOTO-2024-12-19-17-15-47_1.jpg';
+import gallery50 from '@/assets/media//PHOTO-2024-12-19-17-15-52.jpg';
+import gallery51 from '@/assets/media//PHOTO-2024-12-19-17-15-52_1.jpg';
+import gallery52 from '@/assets/media//PHOTO-2024-12-19-17-15-52_2.jpg';
+import gallery53 from '@/assets/media//PHOTO-2024-12-19-17-15-52_3.jpg';
+import gallery54 from '@/assets/media//PHOTO-2024-12-19-17-15-52_4.jpg';
+import gallery55 from '@/assets/media//PHOTO-2024-12-19-17-15-52_5.jpg';
+import gallery56 from '@/assets/media/PHOTO-2024-12-19-17-15-52_6.jpg';
+import gallery57 from '@/assets/media/PHOTO-2024-12-19-17-15-52_7.jpg';
+import gallery58 from '@/assets/media/PHOTO-2024-12-19-17-15-53.jpg';
+import gallery59 from '@/assets/media/PHOTO-2024-12-19-17-15-53_1.jpg';
+import gallery60 from '@/assets/media/PHOTO-2024-12-19-17-15-53_2.jpg';
+import gallery61 from '@/assets/media/PHOTO-2024-12-19-17-15-53_3.jpg';
+import gallery62 from '@/assets/media/PHOTO-2024-12-19-17-15-53_4.jpg';
+import gallery63 from '@/assets/media/PHOTO-2024-12-19-17-15-53_5.jpg';
+import gallery64 from '@/assets/media/PHOTO-2024-12-19-17-15-53_6.jpg';
+
 
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
@@ -315,6 +336,106 @@ const homepage = {
         title:
           'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
         image: [gallery44],
+      },
+
+
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery45],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery46],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery47],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery48],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery49],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery50],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery51],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery52],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery53],
+      },
+      {
+        title: 'Construction of Irrigation channels at Watari Dam',
+        image: [gallery54],
+      },
+      {
+        title: 'Project Image 38',
+        image: [gallery55],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 39',
+        image: [gallery56],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 40',
+        image: [gallery57],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 41',
+        image: [gallery58],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 42',
+        image: [gallery59],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 43',
+        image: [gallery60],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery61],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery62],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery63],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery64],
       },
     ],
   },
