@@ -5,6 +5,7 @@ import PortfolioImage4 from '@/assets/media/Supply of Seeds.jpg';
 import PortfolioImage5 from '@/assets/media/Consultancy.jpg';
 import PortfolioImage6 from '@/assets/media/Design And Construction Of Dams.jpg';
 import PortfolioImage7 from '@/assets/media/Supply of Fertilizer.jpg';
+import PortfolioImage8 from "@/assets/media/Construction and Civil Engineering.jpg"
 
 import { FiSmile, FiAward, FiCheckCircle } from 'react-icons/fi';
 
@@ -132,6 +133,105 @@ const homepage = {
     description:
       'Have fun exploring our memories and years of dedicated services',
     galleryItems: [
+      
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery45],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery46],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery47],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery48],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery49],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery50],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery51],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery52],
+      },
+      {
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        image: [gallery53],
+      },
+      {
+        title: 'Construction of Irrigation channels at Watari Dam',
+        image: [gallery54],
+      },
+      {
+        title: 'Project Image 38',
+        image: [gallery55],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 39',
+        image: [gallery56],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 40',
+        image: [gallery57],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 41',
+        image: [gallery58],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 42',
+        image: [gallery59],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 43',
+        image: [gallery60],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery61],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery62],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery63],
+      },
+      {
+        title:
+          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
+        image: [gallery64],
+      },
       {
         title: 'Sokoto road estate',
         image: [gallery1],
@@ -336,106 +436,6 @@ const homepage = {
         title:
           'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
         image: [gallery44],
-      },
-
-
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery45],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery46],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery47],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery48],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery49],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery50],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery51],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery52],
-      },
-      {
-        title:
-          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
-        image: [gallery53],
-      },
-      {
-        title: 'Construction of Irrigation channels at Watari Dam',
-        image: [gallery54],
-      },
-      {
-        title: 'Project Image 38',
-        image: [gallery55],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 39',
-        image: [gallery56],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 40',
-        image: [gallery57],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 41',
-        image: [gallery58],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 42',
-        image: [gallery59],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 43',
-        image: [gallery60],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
-        image: [gallery61],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
-        image: [gallery62],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
-        image: [gallery63],
-      },
-      {
-        title:
-          'Rehabilitation of Classrooms at Chiromawa Primary School for Border Communities Development Agency 44',
-        image: [gallery64],
       },
     ],
   },
@@ -833,6 +833,16 @@ const homepage = {
     description:
       'Our extensive portfolio showcases the expertise and dedication we bring to every project. From engineering marvels to agricultural innovations, these projects highlight our commitment to excellence and sustainability.',
     items: [
+      {
+        title: 'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4',
+        client: 'African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        location: 'Kano',
+        color: generateRandomLightColor(),
+        contractAmount: '₦200,162,055.00',
+        gallery: [PortfolioImage8],
+        description:
+          'The project involves the rehabilitation and construction of critical irrigation infrastructure in the Bagwai Irrigation Scheme, located in Bagwai Local Government Area (LGA), Kano State. Covering Sectors 1, 2, and 4, the initiative aims to revitalize and expand the irrigation system to enhance agricultural productivity, water resource management, and community livelihoods',
+      },
       {
         title: 'Construction of 16 Units of 5 Bedrooms Duplexes',
         client: 'Silverworld Integrated Development Company Limited',
