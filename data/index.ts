@@ -90,7 +90,11 @@ import BashirAbubakar from '@/assets/media/bashir-abubakar.jpg';
 import UmarSaid from '@/assets/media/umar-said.jpg';
 import AuwalEng from '@/assets/media/auwal.jpg';
 import AliyuSurveyor from '@/assets/media/aliyu.jpg';
-import { title } from 'process';
+
+import Team1 from "@/assets/media/Team1.jpg"
+import Team2 from "@/assets/media/Team2.jpg"
+import Team3 from "@/assets/media/Team3.jpg"
+
 function generateRandomLightColor() {
   const r = Math.floor(Math.random() * 56) + 200;
   const g = Math.floor(Math.random() * 56) + 200;
@@ -588,6 +592,28 @@ const homepage = {
         name: 'Engr. Awwal Shuaibu Musa',
         description:
           ' Engr. Awwal Shuaibu Musa is A Professional Engineer with fourteen (14) years of experience in designs and Construction of Civil Engineering related infrastructures such as Roads, Bridges, Dams and Irrigation Schemes, Water supply, Buildings, flood and Erosion control. Specializing in the Design and Construction of various kind of Irrigation systems such as canal Irrigation, Drip and sprinkler Systems.',
+      },
+      {
+        role: 'Site Engineer',
+        image: Team1,
+        color: generateRandomLightColor(),
+        name: 'Engr. Sani Ibrahim Bello',
+        description: 'B.ENG- IRRIGATION ENGINEERING',
+      },
+      {
+        role: 'Procurement Manager',
+        image: Team2,
+        color: generateRandomLightColor(),
+        name: "Haruna Ya'u Ibrahim",
+        description: '',
+      },
+      {
+        role: 'Site Engineer',
+        image: Team3,
+        color: generateRandomLightColor(),
+        name: 'Engr. Abdullahi Abdurrahman Hassan',
+        description:
+          'Engr. Abdullahi Abdurrahman Hassan is a highly skilled and results-driven Agricultural and Bioresource Engineer with eight (8) years of professional experience in the design, construction, and management of agricultural and bioresource-related infrastructure',
       },
     ],
   },
