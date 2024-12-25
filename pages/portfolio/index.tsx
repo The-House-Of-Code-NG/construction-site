@@ -19,11 +19,11 @@ const PortfolioPage = () => {
             {homepage.portfolio.items.map((item, index) => (
               <div key={index + item}>
                 <div className="max-h-[500px] w-full">
-                <Image
-                  src={item.gallery[0]}
-                  height={500}
-                  className="w-full h-[200px] md:h-[500px] aspect-[2] object-contain  rounded-[6px] overflow-hidden mb-4 lg:rounded-3xl lg:mb-12"
-                />
+                  <Image
+                    src={item.gallery[0]}
+                    height={500}
+                    className="w-full h-[200px] md:h-[500px] aspect-[2] object-contain  rounded-[6px] overflow-hidden mb-4 lg:rounded-3xl lg:mb-12"
+                  />
                 </div>
                 <div>
                   <div className="lg:flex lg:items-start my-10 lg:justify-between">

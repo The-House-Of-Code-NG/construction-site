@@ -615,21 +615,6 @@ const homepage = {
         description:
           'Engr. Abdullahi Abdurrahman Hassan is a highly skilled and results-driven Agricultural and Bioresource Engineer with eight (8) years of professional experience in the design, construction, and management of agricultural and bioresource-related infrastructure',
       },
-      {
-        role: 'Plants Mgr',
-        image: Team3,
-        color: generateRandomLightColor(),
-        name: 'Ezekiel Victor',
-        description:
-          "Work at:- Savannah sugar company Ltd as plant mechanic (Engine Room) from 2004-2009 BECON Nigerian Ltd, as work shop superintendent from 2010-2015 Samatech Nigerian Ltd, as Fleet mgr, from 2016-2019 Gerawa global Engineering Ltd, Chief Mechanic. from 2019-2024',"
-      },
-      {
-        role: 'Store Manager',
-        image: Team3,
-        color: generateRandomLightColor(),
-        name: 'Muhammad Garba',
-        description: "" 
-      },
     ],
   },
   services: {

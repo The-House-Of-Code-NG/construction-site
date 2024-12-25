@@ -34,7 +34,9 @@ const HomepageTeam = ({ data }: { data?: any }) => {
                   className="rounded-t-lg w-full mx-auto object-cover grayscale"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-alphaYellow">{item.name}</h3>
+                  <h3 className="text-lg font-semibold text-alphaYellow">
+                    {item.name}
+                  </h3>
                   <p className="text-gray-500">{item.role}</p>
                   {item?.description && (
                     <span
