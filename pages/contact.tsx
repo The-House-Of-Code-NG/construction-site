@@ -3,7 +3,7 @@ import AnimatedTitle from '@/components/AnimatedTitle';
 import FormText from '@/components/form/Text';
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import mapImg from "@/assets/media/map.png"
+import mapImg from '@/assets/media/map.png';
 
 interface ContactForm {
   phone: string;

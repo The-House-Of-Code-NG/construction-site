@@ -47,7 +47,9 @@ const ServicesPage: React.FC = () => {
           </div>
         </div>
         <div className="container mt-10 agricultural_selector">
-          <h2 className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow text-[57px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[95px] md:text-[110px] lg:text-[150px] lg:tracking-[5.59px] xl:text-[132px]">{homepage.agricultural_services.title}</h2>
+          <h2 className="mb-10 md:mb-20 lg:mb-[192px] text-alphaYellow text-[57px] flex-shrink-0 leading-none font-Helvetica tracking-[1.59px] sm:text-[95px] md:text-[110px] lg:text-[150px] lg:tracking-[5.59px] xl:text-[132px]">
+            {homepage.agricultural_services.title}
+          </h2>
           <div className="grid grid-cols-1 gap-10 lg:gap-[72px]">
             {homepage.agricultural_services &&
               homepage.agricultural_services.items.map((service, index) => (

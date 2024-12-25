@@ -5,7 +5,7 @@ import PortfolioImage4 from '@/assets/media/Supply of Seeds.jpg';
 import PortfolioImage5 from '@/assets/media/Consultancy.jpg';
 import PortfolioImage6 from '@/assets/media/Design And Construction Of Dams.jpg';
 import PortfolioImage7 from '@/assets/media/Supply of Fertilizer.jpg';
-import PortfolioImage8 from "@/assets/media/Construction and Civil Engineering.jpg"
+import PortfolioImage8 from '@/assets/media/Construction and Civil Engineering.jpg';
 
 import { FiSmile, FiAward, FiCheckCircle } from 'react-icons/fi';
 
@@ -82,7 +82,6 @@ import gallery62 from '@/assets/media/PHOTO-2024-12-19-17-15-53_4.jpg';
 import gallery63 from '@/assets/media/PHOTO-2024-12-19-17-15-53_5.jpg';
 import gallery64 from '@/assets/media/PHOTO-2024-12-19-17-15-53_6.jpg';
 
-
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
 import AdamAbubakar from '@/assets/media/adma-abubakar.jpg';
@@ -91,11 +90,11 @@ import UmarSaid from '@/assets/media/umar-said.jpg';
 import AuwalEng from '@/assets/media/auwal.jpg';
 import AliyuSurveyor from '@/assets/media/aliyu.jpg';
 import AdmanJibrin from '@/assets/media/adamJibrin.jpg';
-import AbubakarBashir from '@/assets/media/AbubakBashir.jpg'
+import AbubakarBashir from '@/assets/media/AbubakBashir.jpg';
 
-import Team1 from "@/assets/media/Team1.jpg"
-import Team2 from "@/assets/media/Team2.jpg"
-import Team3 from "@/assets/media/Team3.jpg"
+import Team1 from '@/assets/media/Team1.jpg';
+import Team2 from '@/assets/media/Team2.jpg';
+import Team3 from '@/assets/media/Team3.jpg';
 
 function generateRandomLightColor() {
   const r = Math.floor(Math.random() * 56) + 200;
@@ -139,7 +138,6 @@ const homepage = {
     description:
       'Have fun exploring our memories and years of dedicated services',
     galleryItems: [
-
       {
         title:
           'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
@@ -579,13 +577,14 @@ const homepage = {
         image: BashirAbubakar,
       },
       {
-        name: "Engr. Adam Jibrin Yunusa",
-        role: "Site Engineer",
+        name: 'Engr. Adam Jibrin Yunusa',
+        role: 'Site Engineer',
         color: generateRandomLightColor(),
         image: AdmanJibrin,
-        description: "Adamu Jibrin Yunusa is an experienced civil engineer specializing in water resources and infrastructure development. With a B.Eng. in Irrigation from Bayero University Kano and a Postgraduate Diploma in Water Resources and Environmental Engineering from Ahmadu Bello University, he brings extensive expertise in hydraulic engineering and construction management.\n" +
-            "Throughout his career at prominent organizations including Julius Berger Nigeria, Sahel Consulting Ltd., and Kaduna Agriculture Development Authority, Adamu has successfully managed diverse engineering projects. His technical proficiency spans canal design and construction, dam and reservoir engineering, road development, and comprehensive site supervision. He demonstrates particular strength in earthwork and concrete work supervision, combining theoretical knowledge with practical field experience to deliver high-quality infrastructure solutions.\n" +
-            "Currently pursuing advanced studies in Hydraulic Engineering at Ahmadu Bello University, Adamu continues to enhance his expertise in water resources management and civil engineering."
+        description:
+          'Adamu Jibrin Yunusa is an experienced civil engineer specializing in water resources and infrastructure development. With a B.Eng. in Irrigation from Bayero University Kano and a Postgraduate Diploma in Water Resources and Environmental Engineering from Ahmadu Bello University, he brings extensive expertise in hydraulic engineering and construction management.\n' +
+          'Throughout his career at prominent organizations including Julius Berger Nigeria, Sahel Consulting Ltd., and Kaduna Agriculture Development Authority, Adamu has successfully managed diverse engineering projects. His technical proficiency spans canal design and construction, dam and reservoir engineering, road development, and comprehensive site supervision. He demonstrates particular strength in earthwork and concrete work supervision, combining theoretical knowledge with practical field experience to deliver high-quality infrastructure solutions.\n' +
+          'Currently pursuing advanced studies in Hydraulic Engineering at Ahmadu Bello University, Adamu continues to enhance his expertise in water resources management and civil engineering.',
       },
       {
         role: 'Engineer',
@@ -593,7 +592,7 @@ const homepage = {
         color: generateRandomLightColor(),
         name: 'Engr. Awwal Shuaibu Musa',
         description:
-            ' Engr. Awwal Shuaibu Musa is A Professional Engineer with fourteen (14) years of experience in designs and Construction of Civil Engineering related infrastructures such as Roads, Bridges, Dams and Irrigation Schemes, Water supply, Buildings, flood and Erosion control. Specializing in the Design and Construction of various kind of Irrigation systems such as canal Irrigation, Drip and sprinkler Systems.',
+          ' Engr. Awwal Shuaibu Musa is A Professional Engineer with fourteen (14) years of experience in designs and Construction of Civil Engineering related infrastructures such as Roads, Bridges, Dams and Irrigation Schemes, Water supply, Buildings, flood and Erosion control. Specializing in the Design and Construction of various kind of Irrigation systems such as canal Irrigation, Drip and sprinkler Systems.',
       },
       {
         role: 'Site Engineer',
@@ -608,7 +607,7 @@ const homepage = {
         color: generateRandomLightColor(),
         name: 'Engr. Abdullahi Abdurrahman Hassan',
         description:
-            'Engr. Abdullahi Abdurrahman Hassan is a highly skilled and results-driven Agricultural and Bioresource Engineer with eight (8) years of professional experience in the design, construction, and management of agricultural and bioresource-related infrastructure',
+          'Engr. Abdullahi Abdurrahman Hassan is a highly skilled and results-driven Agricultural and Bioresource Engineer with eight (8) years of professional experience in the design, construction, and management of agricultural and bioresource-related infrastructure',
       },
       {
         name: 'Umar Said',
@@ -631,7 +630,6 @@ const homepage = {
         name: "Haruna Ya'u Ibrahim",
         description: '',
       },
-
     ],
   },
   services: {
@@ -877,8 +875,10 @@ const homepage = {
       'Our extensive portfolio showcases the expertise and dedication we bring to every project. From engineering marvels to agricultural innovations, these projects highlight our commitment to excellence and sustainability.',
     items: [
       {
-        title: 'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4',
-        client: 'African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
+        title:
+          'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4',
+        client:
+          'African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
         location: 'Kano',
         color: generateRandomLightColor(),
         contractAmount: '₦200,162,055.00',
