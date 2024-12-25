@@ -95,6 +95,9 @@ import Team1 from "@/assets/media/Team1.jpg"
 import Team2 from "@/assets/media/Team2.jpg"
 import Team3 from "@/assets/media/Team3.jpg"
 
+import Team6 from "@/assets/media/Team6.jpg"
+import Team7 from "@/assets/media/Team7.jpg"
+
 function generateRandomLightColor() {
   const r = Math.floor(Math.random() * 56) + 200;
   const g = Math.floor(Math.random() * 56) + 200;
@@ -617,7 +620,7 @@ const homepage = {
       },
       {
         role: 'Plants Mgr',
-        image: Team3,
+        image: Team6,
         color: generateRandomLightColor(),
         name: 'Ezekiel Victor',
         description:
@@ -625,7 +628,7 @@ const homepage = {
       },
       {
         role: 'Store Manager',
-        image: Team3,
+        image: Team7,
         color: generateRandomLightColor(),
         name: 'Muhammad Garba',
         description: "" 
