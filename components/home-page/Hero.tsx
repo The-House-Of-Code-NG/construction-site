@@ -36,7 +36,7 @@ const HomepageHero = ({ data }: { data: any }) => {
                 {data.description}
               </p>
               <Link href="/contact">
-                <a className="flex px-[18px] py-[14px] rounded-[32px] border border-appGray-200 text-xs leading-none tracking-[-0.41px] font-medium text-appGray-500 uppercase mb-14 lg:px-6 lg:py-4 lg:text-sm lg:leading-none">
+                <a className="flex px-[18px] py-[14px] rounded-[32px] border border-alphaYellow text-xs leading-none tracking-[-0.41px] font-medium text-appGray-500 uppercase mb-14 lg:px-6 lg:py-4 lg:text-sm lg:leading-none">
                   Contact Us
                 </a>
               </Link>

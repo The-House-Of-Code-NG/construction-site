@@ -86,10 +86,12 @@ import gallery64 from '@/assets/media/PHOTO-2024-12-19-17-15-53_6.jpg';
 // Members
 import MohdShehu from '@/assets/media/mohammad-shehu.jpg';
 import AdamAbubakar from '@/assets/media/adma-abubakar.jpg';
-import BashirAbubakar from '@/assets/media/bashir-abubakar.jpg';
+import BashirAbubakar from '@/assets/media/Bashir.jpg';
 import UmarSaid from '@/assets/media/umar-said.jpg';
 import AuwalEng from '@/assets/media/auwal.jpg';
 import AliyuSurveyor from '@/assets/media/aliyu.jpg';
+import AdmanJibrin from '@/assets/media/adamJibrin.jpg';
+import AbubakarBashir from '@/assets/media/AbubakBashir.jpg'
 
 import Team1 from "@/assets/media/Team1.jpg"
 import Team2 from "@/assets/media/Team2.jpg"
@@ -137,7 +139,7 @@ const homepage = {
     description:
       'Have fun exploring our memories and years of dedicated services',
     galleryItems: [
-      
+
       {
         title:
           'Rehabilitation/Construction of Irrigation Schemes in Bagwai Irrigation Scheme, Bagwai LGA, Kano State - Sectors 1,2 & 4 for African Development Bank assisted : Agricultural Transformation Agenda Support Programme Phase 1 (ATASP-1). Kano-Jigawa Staple Crop processing Zone Implementation Unit',
@@ -562,6 +564,12 @@ const homepage = {
         image: AdamAbubakar,
       },
       {
+        name: 'Eng. Abubakar Bashir',
+        role: 'Director technical services',
+        color: generateRandomLightColor(),
+        image: AbubakarBashir,
+      },
+      {
         name: 'Bashir Aliu Abubakar MBA, PMP',
         role: 'Managing Director',
         color: generateRandomLightColor(),
@@ -571,19 +579,13 @@ const homepage = {
         image: BashirAbubakar,
       },
       {
-        name: 'Umar Said',
-        role: 'Admin Office',
+        name: "Engr. Adam Jibrin Yunusa",
+        role: "Site Engineer",
         color: generateRandomLightColor(),
-        image: UmarSaid,
-      },
-
-      {
-        role: 'Surveyor',
-        image: AliyuSurveyor,
-        color: generateRandomLightColor(),
-        name: 'Rilwan Aliyu',
-        description:
-          'Highly experienced surveyor with Fourteen years of experience in land surveying, mapping, and geospatial technologies. Skilled in topographic surveys, boundary surveys, GPS, and survey software.',
+        image: AdmanJibrin,
+        description: "Adamu Jibrin Yunusa is an experienced civil engineer specializing in water resources and infrastructure development. With a B.Eng. in Irrigation from Bayero University Kano and a Postgraduate Diploma in Water Resources and Environmental Engineering from Ahmadu Bello University, he brings extensive expertise in hydraulic engineering and construction management.\n" +
+            "Throughout his career at prominent organizations including Julius Berger Nigeria, Sahel Consulting Ltd., and Kaduna Agriculture Development Authority, Adamu has successfully managed diverse engineering projects. His technical proficiency spans canal design and construction, dam and reservoir engineering, road development, and comprehensive site supervision. He demonstrates particular strength in earthwork and concrete work supervision, combining theoretical knowledge with practical field experience to deliver high-quality infrastructure solutions.\n" +
+            "Currently pursuing advanced studies in Hydraulic Engineering at Ahmadu Bello University, Adamu continues to enhance his expertise in water resources management and civil engineering."
       },
       {
         role: 'Engineer',
@@ -591,7 +593,7 @@ const homepage = {
         color: generateRandomLightColor(),
         name: 'Engr. Awwal Shuaibu Musa',
         description:
-          ' Engr. Awwal Shuaibu Musa is A Professional Engineer with fourteen (14) years of experience in designs and Construction of Civil Engineering related infrastructures such as Roads, Bridges, Dams and Irrigation Schemes, Water supply, Buildings, flood and Erosion control. Specializing in the Design and Construction of various kind of Irrigation systems such as canal Irrigation, Drip and sprinkler Systems.',
+            ' Engr. Awwal Shuaibu Musa is A Professional Engineer with fourteen (14) years of experience in designs and Construction of Civil Engineering related infrastructures such as Roads, Bridges, Dams and Irrigation Schemes, Water supply, Buildings, flood and Erosion control. Specializing in the Design and Construction of various kind of Irrigation systems such as canal Irrigation, Drip and sprinkler Systems.',
       },
       {
         role: 'Site Engineer',
@@ -601,20 +603,35 @@ const homepage = {
         description: 'B.ENG- IRRIGATION ENGINEERING',
       },
       {
+        role: 'Site Engineer',
+        image: Team3,
+        color: generateRandomLightColor(),
+        name: 'Engr. Abdullahi Abdurrahman Hassan',
+        description:
+            'Engr. Abdullahi Abdurrahman Hassan is a highly skilled and results-driven Agricultural and Bioresource Engineer with eight (8) years of professional experience in the design, construction, and management of agricultural and bioresource-related infrastructure',
+      },
+      {
+        name: 'Umar Said',
+        role: 'Admin Office',
+        color: generateRandomLightColor(),
+        image: UmarSaid,
+      },
+      {
+        role: 'Surveyor',
+        image: AliyuSurveyor,
+        color: generateRandomLightColor(),
+        name: 'Rilwan Aliyu',
+        description:
+          'Highly experienced surveyor with Fourteen years of experience in land surveying, mapping, and geospatial technologies. Skilled in topographic surveys, boundary surveys, GPS, and survey software.',
+      },
+      {
         role: 'Procurement Manager',
         image: Team2,
         color: generateRandomLightColor(),
         name: "Haruna Ya'u Ibrahim",
         description: '',
       },
-      {
-        role: 'Site Engineer',
-        image: Team3,
-        color: generateRandomLightColor(),
-        name: 'Engr. Abdullahi Abdurrahman Hassan',
-        description:
-          'Engr. Abdullahi Abdurrahman Hassan is a highly skilled and results-driven Agricultural and Bioresource Engineer with eight (8) years of professional experience in the design, construction, and management of agricultural and bioresource-related infrastructure',
-      },
+
     ],
   },
   services: {
